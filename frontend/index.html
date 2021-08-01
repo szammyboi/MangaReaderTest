@@ -1,0 +1,285 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 97vh;
+            overflow-y: hidden;
+        }
+
+        #drawer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            transition: top 1s, box-shadow 1s;
+            z-index: 2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: bottom;
+            background-color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 150px -20px, rgba(0, 0, 0, 0.3) 0px 30px 120px -30px;
+        }
+
+        #chapter-drawer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:97vh
+        }
+
+        #center-group {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #chapter-select {
+            font-family: 'Lato', sans-serif;
+            font-size: 300px;
+            width: 100vw;
+            height: auto;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            background-image: linear-gradient(to right, #e14fad 0%, #f9d423 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 10s infinite linear;
+        }
+
+        #spacer {
+            background-image: linear-gradient(to right, #e14fad 0%, #f9d423 100%);
+            -webkit-animation: hue 10s infinite linear;
+            width: 65vw;
+            height: 1vh;
+            left: 0px;
+            border-radius: 15px;
+        }
+
+        #reader {
+            z-index: 1;
+            width: fit-content;
+            position: absolute;
+            top: 48.5vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+        }
+
+        #canvases {
+            width: fit-content;
+            height: fit-content;
+            border: 10px solid;
+            border-color: rgb(17, 17, 17);
+            border-radius: 10px;
+            /*border-image-source: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);*/
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+
+        #title {
+            font-family: 'Lato', sans-serif;
+            font-size: 100px;
+            width: 100vh;
+            text-align: center;
+            transform: rotate(-90deg);
+            transform-origin: left top 0;
+            float: left;
+            position: absolute;
+            left: 4%;
+            top: calc(50% + 48.5vh);
+            text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+
+        #title {
+            color: #f35626;
+            background-image: linear-gradient(to right, #e14fad 0%, #f9d423 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 60s infinite linear;
+        }
+
+        #chapter {
+            font-family: 'Lato', sans-serif;
+            font-size: 70px;
+            width: 100vh;
+            text-align: center;
+            transform: rotate(-90deg);
+            transform-origin: left top 0;
+            float: left;
+            position: absolute;
+            left: 10%;
+            top: calc(50% + 48.5vh);
+            text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+            color: #f35626;
+            background-image: linear-gradient(to right, #e14fad 0%, #f9d423 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 60s infinite linear;
+        }
+
+        #colorbar {
+            width: 100vw;
+            height: 3vh;
+            background-image: linear-gradient(to right, #e14fad 0%, #f9d423 100%);
+            -webkit-animation: hue 60s infinite linear;
+        }
+
+        #borderNext {
+            position: absolute;
+            top: 38.5vh;
+            left: 91vw;
+            transform: translate(-50%, -50%);
+        }
+
+        .buttonBorder:hover {
+            width: 125px;
+            height: 125px;
+        }
+
+        #borderPrevious {
+            position: absolute;
+            top: 58.5vh;
+            left: 91vw;
+            transform: translate(-50%, -50%);
+            display: flex;
+
+        }
+
+        #seriesNav {
+            background-color: white;
+            border-radius: 20px;
+            float: left;
+            margin-left: 5vw;
+            margin-top: 5vh;
+            width: 40vw;
+
+        }
+
+        #chapterNav {
+            background-color: white;
+            border-radius: 20px;
+            float: right;
+            width: 40vw;
+            height: 90vh;
+            margin-right: 5vw;
+            margin-top: 5vh;
+        }
+
+        button {
+            position: sticky;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border: none;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+
+        button:hover {
+            width: 115px;
+            height: 115px;
+        }
+
+        .buttonBorder {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            background-image: radial-gradient(circle at center, #e14fad 0%, #f9d423 100%);
+            -webkit-animation: hue 60s infinite linear;
+        }
+
+        .arrow {
+            width: 100px;
+        }
+
+        .arrow:hover {
+            width: 115px;
+        }
+
+        input {
+            border: none;
+            -webkit-appearance: none;
+        }
+
+        input:focus {
+            outline: none;
+            border: none;
+            -webkit-appearance: none;
+        }
+
+        @keyframes hue {
+            from {
+                filter: hue-rotate(0deg);
+            }
+
+            to {
+                filter: hue-rotate(-360deg);
+            }
+        }
+
+        * {
+            user-select: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="readerContainer" class="hidden">
+        <div id="reader">
+            <div style="display: none;" id="images"></div>
+            <div id="canvases" data-tilt data-tilt-scale="1" data-tilt-max="5" data-tilt-perspective="1000">
+                <canvas id="left"></canvas><canvas id="right"></canvas>
+            </div>
+        </div>
+        <div id="borderNext" class="buttonBorder"><button id="next" onclick="nextChapter()"><img class="arrow"
+                    src="https://i.ibb.co/XyQJ0KW/arrowleft.png"></button></div>
+        <div id="borderPrevious" class="buttonBorder"><button id="previous" onclick="previousChapter()"><img
+                    class="arrow" src="https://i.ibb.co/NsfWVY9/arrowright2.png"></button></div>
+
+
+        <div id="title"></div>
+        <div id="chapter"></div>
+    </div>
+
+    <div id="drawer">
+        <div id="colorbar"  onclick="pullUp()"></div>
+        <div id="chapter-drawer"> 
+            <div id="center-group">
+                <input id="chapter-select" placeholder="" autocomplete="false"  type="number"
+                    step="0.1"></input>
+                <div id="spacer"></div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+    <script src="http://localhost:1000/assets/index.js"></script>
+</body>
+
+</html>
