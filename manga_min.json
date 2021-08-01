@@ -1,0 +1,1075 @@
+{
+ "manga": [
+  {
+   "title": "My Hero Academia",
+   "vanityTitle": "my-hero-academia",
+   "latestChapter": "321",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/371-SeriesThumbnails_MHA__400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Jujutsu Kaisen",
+   "vanityTitle": "jujutsu-kaisen",
+   "latestChapter": "153",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/540-th-WSJ_JuJutsuKaisen_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "One Piece",
+   "vanityTitle": "one-piece",
+   "latestChapter": "1020",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/526-SeriesThumb_OP_400x320.png",
+   "chapters": []
+  },
+  {
+   "title": "DC3",
+   "vanityTitle": "dc3",
+   "latestChapter": "Special One-Shot",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/792-th-DC3_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "My Hero Academia Special Spin-off: Endeavor’s Mission",
+   "vanityTitle": "my-hero-academia-special-spin-off-endeavors-mission",
+   "latestChapter": "Special One-Shot",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/793-th-MHA_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Neru: Way of the Martial Artist",
+   "vanityTitle": "neru-way-of-the-martial-artist",
+   "latestChapter": "4",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/790-th-WSJ2021_issue31_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Mashle: Magic and Muscles",
+   "vanityTitle": "mashle",
+   "latestChapter": "72",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/694-th-012620_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Undead Unluck",
+   "vanityTitle": "undead-unluck",
+   "latestChapter": "73",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/693-th-011920_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Blue Box",
+   "vanityTitle": "blue-box",
+   "latestChapter": "15",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/757-th-WSJ2021_issue19_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Sakamoto Days",
+   "vanityTitle": "sakamoto-days",
+   "latestChapter": "33",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/739-th-112220_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "The Hunters Guild: Red Hood",
+   "vanityTitle": "the-hunters-guild-red-hood",
+   "latestChapter": "5",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/781-th-WSJ2021_issue30_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Ayakashi Triangle",
+   "vanityTitle": "ayakashi-triangle",
+   "latestChapter": "54",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/716-th-061420_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Black Clover",
+   "vanityTitle": "black-clover",
+   "latestChapter": "301",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/448-th-SeriesThumbnailsManga_BLC_chapter_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Candy Flurry",
+   "vanityTitle": "candy-flurry",
+   "latestChapter": "14",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/762-th-WSJ2021_issue20_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "High School Family: Kokosei Kazoku",
+   "vanityTitle": "high-school-family",
+   "latestChapter": "48",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/733-th-090620_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Magu-chan: God of Destruction",
+   "vanityTitle": "magu-chan-god-of-destruction",
+   "latestChapter": "53",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/717-th-062120_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Me & Roboco",
+   "vanityTitle": "me-and-roboco",
+   "latestChapter": "51",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/721-th-070520_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Mission: Yozakura Family",
+   "vanityTitle": "mission-yozakura-family",
+   "latestChapter": "92",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/627-th-082519_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "The Elusive Samurai",
+   "vanityTitle": "the-elusive-samurai",
+   "latestChapter": "26",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/750-th-WSJ2021_issue08_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "WITCH WATCH",
+   "vanityTitle": "witch-watch",
+   "latestChapter": "24",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/753-th-WSJ2021_issue10_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Choujin X",
+   "vanityTitle": "choujin-x",
+   "latestChapter": "5",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/763-th-0_aSimul_Color_Thumbnail_400x320thisone.jpg",
+   "chapters": []
+  },
+  {
+   "title": "One-Punch Man",
+   "vanityTitle": "one-punch-man",
+   "latestChapter": "147",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/249-th-327-SeriesThumbnailsManga_OPM_400x320-1.jpg",
+   "chapters": []
+  },
+  {
+   "title": "GHOST REAPER GIRL",
+   "vanityTitle": "ghost-reaper-girl",
+   "latestChapter": "24",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/722-th-071220_Thumbnail_GhostGirl_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Spy x Family",
+   "vanityTitle": "spy-x-family",
+   "latestChapter": "50",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/632-th-SJ_SpyFamily_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "My Hero Academia: Vigilantes",
+   "vanityTitle": "my-hero-academia-vigilantes",
+   "latestChapter": "106",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/520-th-SeriesThumbnailsManga_MHVigilante_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Kaiju No. 8",
+   "vanityTitle": "kaiju-no-8",
+   "latestChapter": "40",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/724-th-072620_Thumbnail_Kaiju8_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Boruto: Naruto Next Generations",
+   "vanityTitle": "boruto",
+   "latestChapter": "60",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1552-WSJ_Boruto_400x320_v2.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Dragon Ball Super",
+   "vanityTitle": "dragon-ball-super",
+   "latestChapter": "74",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1572-WSJ_DB_Super_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Moriarty the Patriot",
+   "vanityTitle": "moriarty-the-patriot",
+   "latestChapter": "15",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/2479-Thumb_Moriarty_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Food Wars!: Shokugeki no Sanji",
+   "vanityTitle": "shokugeki-no-sanji",
+   "latestChapter": "3",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/647-th-101319_shokugekinosanji_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Dr. STONE",
+   "vanityTitle": "dr-stone",
+   "latestChapter": "205",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1696-WSJ_DrStone_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Look Back",
+   "vanityTitle": "look-back",
+   "latestChapter": "Special One-Shot",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/791-th-WSJ2021_issue33_Thumbnail_400x320_copy.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Nine Dragons’ Ball Parade",
+   "vanityTitle": "nine-dragons-ball-parade",
+   "latestChapter": "20",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/755-th-WSJ2021_issue11_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Blue Exorcist",
+   "vanityTitle": "blue-exorcist",
+   "latestChapter": "132",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/278-SeriesThumbnailsManga_BEX_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Seraph of the End",
+   "vanityTitle": "seraph-of-the-end",
+   "latestChapter": "104",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/334-SeriesThumbnailsManga_SER_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Twin Star Exorcists",
+   "vanityTitle": "twin-star-exorcists",
+   "latestChapter": "95",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/365-SeriesThumbnailsManga_TSE_v2_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "World Trigger",
+   "vanityTitle": "world-trigger",
+   "latestChapter": "210",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/353-SeriesThumbnailsManga_WTG_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Blue Flag",
+   "vanityTitle": "blue-flag",
+   "latestChapter": "53",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/2356-SeriesThumbnails_BlueFlag_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Golden Kamuy",
+   "vanityTitle": "golden-kamuy",
+   "latestChapter": "221",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/1423-SeriesThumbnailsManga_GoldenKamuy_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "i tell c",
+   "vanityTitle": "i-tell-c",
+   "latestChapter": "21",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/751-th-020721_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Hard-Boiled Cop and Dolphin",
+   "vanityTitle": "hard-boiled-cop-and-dolphin",
+   "latestChapter": "47",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/718-th-062820_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Agravity Boys",
+   "vanityTitle": "agravity-boys",
+   "latestChapter": "51",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/687-th-120819_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "JoJo’s Bizarre Adventure: Part 4--Diamond Is Unbreakable",
+   "vanityTitle": "jojos-bizarre-adventure-part-4-diamond-is-unbreakable",
+   "latestChapter": "174",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/596-th-EEEF6C76-3EA7-42A5-B717-2EF30F3F152F.jpeg",
+   "chapters": []
+  },
+  {
+   "title": "Build King",
+   "vanityTitle": "build-king",
+   "latestChapter": "20",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/738-th-111520_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Phantom Seer",
+   "vanityTitle": "phantom-seer",
+   "latestChapter": "30",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/732-th-083020_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "My Hero Academia: Team-Up Missions",
+   "vanityTitle": "my-hero-academia-team-up-missions",
+   "latestChapter": "3.3",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/748-th-Thumb_MHA_TeamUp_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "ROBOT×LASERBEAM",
+   "vanityTitle": "robot-laserbeam",
+   "latestChapter": "62",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1708-WSJ_RobotLaserbeam_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Our Blood Oath",
+   "vanityTitle": "our-blood-oath",
+   "latestChapter": "18",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/734-th-091320_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Hell’s Paradise: Jigokuraku",
+   "vanityTitle": "hells-paradise-jigokuraku",
+   "latestChapter": "127",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/553-th-WSJ_Jigokuraku_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Moriking",
+   "vanityTitle": "moriking",
+   "latestChapter": "35",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/707-th-041220_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Platinum End",
+   "vanityTitle": "platinum-end",
+   "latestChapter": "58",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/660-SeriesThumbnailsManga_PLTE_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "The Promised Neverland",
+   "vanityTitle": "the-promised-neverland",
+   "latestChapter": "181.4",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1592-WSJ_PromisedNeverland_v4_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "We Never Learn",
+   "vanityTitle": "we-never-learn",
+   "latestChapter": "187",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1676-WSJ_WeNeverLearn_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Chainsaw Man",
+   "vanityTitle": "chainsaw-man",
+   "latestChapter": "97",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/580-th-WSJ_Chainsaw_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Demon Slayer: Kimetsu no Yaiba",
+   "vanityTitle": "demon-slayer-kimetsu-no-yaiba",
+   "latestChapter": "205.1",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/1880-SeriesThumbnailsManga_DemonSlayer_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Burn the Witch",
+   "vanityTitle": "burn-the-witch",
+   "latestChapter": "Special One-Shot!",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/703-th-081620_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Time Paradox Ghostwriter",
+   "vanityTitle": "time-paradox-ghostwriter",
+   "latestChapter": "14",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/712-th-051720_SJBanners_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Mitama Security: Spirit Busters",
+   "vanityTitle": "mitama-security",
+   "latestChapter": "47.1",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/628-th-mitamathumb_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Bone Collection",
+   "vanityTitle": "bone-collection",
+   "latestChapter": "15",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/711-th-042620_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Spirit Photographer Saburo Kono",
+   "vanityTitle": "spirit-photographer-saburo-kono",
+   "latestChapter": "Special One-Shot!",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/728-th-081620_Thumbnail_Yokoku_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "My Hero Academia: Smash!!",
+   "vanityTitle": "my-hero-academia-smash",
+   "latestChapter": "94",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/611-th-SeriesThumbnailsManga_MHASmash_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Haikyu!!",
+   "vanityTitle": "haikyu",
+   "latestChapter": "402",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/450-th-878-SeriesThumbnailsManga_HKU_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Guardian of the Witch",
+   "vanityTitle": "guardian-of-the-witch",
+   "latestChapter": "19",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/699-th-020220_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "RWBY The Official Manga",
+   "vanityTitle": "rwby-the-official-manga",
+   "latestChapter": "19",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/579-th-WSJ_RWBY_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Yugen's All-Ghouls Homeroom",
+   "vanityTitle": "yugens-all-ghouls-homeroom",
+   "latestChapter": "Special One-Shot",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/714-th-052420_Yugen_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Zipman!!",
+   "vanityTitle": "zipman",
+   "latestChapter": "17",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/684-th-120819_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Tokyo Ghoul: re",
+   "vanityTitle": "tokyo-ghoul-re",
+   "latestChapter": "154",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/519-th-SeriesThumbnailsManga_TokyoGhoulRe_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "My Hero Academia - League of Villains: Undercover",
+   "vanityTitle": "my-hero-academia-one-shot",
+   "latestChapter": "Special One-Shot",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/704-th-MHAHeroesRising_seriesthumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Samurai 8: The Tale of Hachimaru",
+   "vanityTitle": "samurai-8",
+   "latestChapter": "43",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/599-th-051219_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "D.Gray-man",
+   "vanityTitle": "d-gray-man",
+   "latestChapter": "230",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/79-Tier05_SeriesThumbnails_DGR_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "The Right Way to Make Jump!",
+   "vanityTitle": "the-right-way-to-make-jump",
+   "latestChapter": "30",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/552-th-SJ_HowToMakeJump_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Death Note: Special One-Shot",
+   "vanityTitle": "death-note-special-one-shot",
+   "latestChapter": "Special One-Shot",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/700-th-020220_DN_Oneshot_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Dr. STONE Reboot: Byakuya",
+   "vanityTitle": "dr-stone-reboot-byakuya",
+   "latestChapter": "9",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/648-th-WSJ_DrStoneCreators_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Boys Over Flowers Season 2",
+   "vanityTitle": "boys-over-flowers-season-2-manga",
+   "latestChapter": "111",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1464-SeriesThumbnailsManga_BoF02_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Tokyo Shinobi Squad",
+   "vanityTitle": "tokyo-shinobi-squad",
+   "latestChapter": "27",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/605-th-WSJ_TokyoShinobiSquad_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Beast Children",
+   "vanityTitle": "beast-children",
+   "latestChapter": "27",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/604-th-WSJ_BeastChildren_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Double Taisei",
+   "vanityTitle": "double-taisei",
+   "latestChapter": "27",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/603-th-WSJ_FutariNoTaisei_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Yui Kamio Lets Loose",
+   "vanityTitle": "yui-kamio-lets-loose",
+   "latestChapter": "36",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/594-th-031019_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Food Wars!: Shokugeki no Soma",
+   "vanityTitle": "food-wars",
+   "latestChapter": "315.4",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/343-SeriesThumbnailsManga_FDW_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Fire Punch",
+   "vanityTitle": "fire-punch",
+   "latestChapter": "83",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/527-th-1732-SeriesThumbnailsManga_FirePunch_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Boys Over Flowers",
+   "vanityTitle": "boys-over-flowers",
+   "latestChapter": "243",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/31-SeriesThumbnailsManga_BOF__400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Boys Over Flowers: Jewelry Box",
+   "vanityTitle": "boys-over-flowers-jewelry-box",
+   "latestChapter": "4",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/31-SeriesThumbnailsManga_BOF__400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "The Last Saiyuki",
+   "vanityTitle": "the-last-saiyuki",
+   "latestChapter": "23",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/590-th-030319_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Hell Warden Higuma",
+   "vanityTitle": "hell-warden-higuma",
+   "latestChapter": "19.1",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/581-th-WSJ_Gokuta_Higma_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Black Torch",
+   "vanityTitle": "black-torch",
+   "latestChapter": "19",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/1897-SeriesThumbnails_BlackTorch_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "F-Ken",
+   "vanityTitle": "f-ken",
+   "latestChapter": "1",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/626-th-SJ_FKen_NoTag_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Science vs. Magic",
+   "vanityTitle": "science-vs-magic",
+   "latestChapter": "Special One-Shot!",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/625-th-SJ_MagicScience_NoTag_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "One Piece: Boichi Covers Zolo vs. Mihawk",
+   "vanityTitle": "one-piece-one-shot-boichi",
+   "latestChapter": "Special One-Shot!",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/624-th-SJ_OnePieceBoichi_NoTag_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Tokyo Ghoul",
+   "vanityTitle": "tokyo-ghoul",
+   "latestChapter": "143",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/528-SeriesThumb_TKG_400x320.png",
+   "chapters": []
+  },
+  {
+   "title": "Hi-Fi Cluster",
+   "vanityTitle": "hi-fi-cluster",
+   "latestChapter": "18",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/347-th-SJ_HiFiCluster_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Love Rush!",
+   "vanityTitle": "love-rush",
+   "latestChapter": "13",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1608-WSJ_LoveRush_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "RED SPRITE",
+   "vanityTitle": "red-sprite",
+   "latestChapter": "14",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1616-WSJ_RedSprite_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Stealth Symphony",
+   "vanityTitle": "stealth-symphony",
+   "latestChapter": "20",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/325-th-SJ_StealthSymphony_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "JoJo's Bizarre Adventure: Part 1--Phantom Blood",
+   "vanityTitle": "jojos-bizarre-adventure-part-one",
+   "latestChapter": "44",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/89-SeriesThumbManga_JOJO_v2_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "JoJo's Bizarre Adventure: Part 2--Battle Tendency",
+   "vanityTitle": "jojos-bizarre-adventure-part-two",
+   "latestChapter": "69",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1232-SeriesThumbnailsManga_JoJoPart02_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "JoJo’s Bizarre Adventure: Part 3--Stardust Crusaders",
+   "vanityTitle": "jojos-bizarre-adventure-part-thr",
+   "latestChapter": "152",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1584-SeriesThumbnailsManga_JoJoPart03_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "ne0;lation",
+   "vanityTitle": "ne0lation",
+   "latestChapter": "19",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/583-th-WSJ__ne0;lation_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Yu-Gi-Oh! ARC-V",
+   "vanityTitle": "yu-gi-oh-arc-v",
+   "latestChapter": "45",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1056-SeriesThumbnailsManga_YGOArcV_v2_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Genkaku Picasso",
+   "vanityTitle": "genkaku-picasso",
+   "latestChapter": "11.4",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/258-SeriesThumbnailsManga_Genkaku_v2_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Hikaru no Go",
+   "vanityTitle": "hikaru-no-go",
+   "latestChapter": "155",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/124-th-SeriesThumbnailsManga_HikaruNoGo_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "7thGARDEN",
+   "vanityTitle": "7th-garden",
+   "latestChapter": "32",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/871-SeriesThumbnailsManga_7GR_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "All You Need is Kill",
+   "vanityTitle": "all-you-need-is-kill-manga",
+   "latestChapter": "17",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/199-SeriesThumbnailsManga_AYNIK_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Assassination Classroom",
+   "vanityTitle": "assassination-classroom",
+   "latestChapter": "185",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/350-SeriesThumbnails_ASC__400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Bakuman。",
+   "vanityTitle": "bakuman",
+   "latestChapter": "176",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/245-SeriesThumbnailsManga_BAK_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Barrage",
+   "vanityTitle": "barrage",
+   "latestChapter": "16",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/293-SeriesThumbnailsManga_Barrage_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Black Cat",
+   "vanityTitle": "black-cat",
+   "latestChapter": "185",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/76-SeriesThumbnailsManga_BLC__400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Bleach",
+   "vanityTitle": "bleach",
+   "latestChapter": "686",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/106-SeriesThumbnailsManga_BLH_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Buso Renkin",
+   "vanityTitle": "buso-renkin",
+   "latestChapter": "83",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/77-SeriesThumbnailsManga_BusoRenkin_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Claymore",
+   "vanityTitle": "claymore",
+   "latestChapter": "155",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/78-Tier05_SeriesThumbnails_CLM_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "COWA!",
+   "vanityTitle": "cowa",
+   "latestChapter": "14",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/147-SeriesThumbnailsManga_COW__400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Cross Manage",
+   "vanityTitle": "cross-manage",
+   "latestChapter": "43",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/599-SeriesThumbnailsManga_CXM__400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Death Note",
+   "vanityTitle": "death-note",
+   "latestChapter": "108",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/80-SeriesThumbnailsManga_DNv3_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Dr. Slump",
+   "vanityTitle": "dr-slump",
+   "latestChapter": "235",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/83-SeriesThumbnailsManga_DRS_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Dragon Ball",
+   "vanityTitle": "dragon-ball",
+   "latestChapter": "194",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/84-SeriesThumbnailsManga_DBv2_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Dragon Ball Full Color Freeza Arc",
+   "vanityTitle": "dragon-ball-full-color-freeza",
+   "latestChapter": "84",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1512-SeriesThumbnailsManga_DBFullColorFreeza_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Dragon Ball Full Color Saiyan Arc",
+   "vanityTitle": "dragon-ball-full-color",
+   "latestChapter": "51",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/948-SeriesThumbnailsManga_DBFullColorSaiyan_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Dragon Ball Z",
+   "vanityTitle": "dragon-ball-z",
+   "latestChapter": "325",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/74-SeriesThumbnailsManga_DBZ_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Dragon Ball: That Time I Got Reincarnated as Yamcha!",
+   "vanityTitle": "dragon-ball-that-time--got-reincarnated-as-yamcha",
+   "latestChapter": "3",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/566-th-WSJ_DBYamcha_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Gun Blaze West",
+   "vanityTitle": "gun-blaze-west",
+   "latestChapter": "27",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/148-SeriesThumbnailsManga_GunBlazeWest_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Jaco the Galactic Patrolman",
+   "vanityTitle": "jaco-galactic-patrolman",
+   "latestChapter": "10",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/333-SeriesThumbnailsManga_JACO_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Kuroko’s Basketball",
+   "vanityTitle": "kurokos-basketball",
+   "latestChapter": "275",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/895-SeriesThumbnailsManga_KUR_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Muhyo & Roji's Bureau of Supernatural Investigation",
+   "vanityTitle": "muhyo-and-rojis-bureau-of-supern",
+   "latestChapter": "156",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/124-SeriesThumbnailsManga_MRI_v2_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Naruto: Chibi Sasuke's Sharingan Legend",
+   "vanityTitle": "naruto-chibi-sasukes-sharingan-l",
+   "latestChapter": "24",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1576-SeriesThumbnailsManga_NARChibi_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Naruto: The Seventh Hokage and the Scarlet Spring",
+   "vanityTitle": "naruto-the-seventh-hokage-and-th",
+   "latestChapter": "710",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1384-SeriesThumbnailsManga_Naruto7thHokage_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Nisekoi",
+   "vanityTitle": "nisekoi",
+   "latestChapter": "229",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/873-SeriesThumbnailsManga_NSK_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Nura: Rise of the Yokai Clan",
+   "vanityTitle": "nura-rise-of-the-yokai-clan",
+   "latestChapter": "210",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/270-SeriesThumbnailsManga_NUR_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Pretty Face",
+   "vanityTitle": "pretty-face",
+   "latestChapter": "53",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/120-SeriesThumbnailsManga_PrettyFace_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Psyren",
+   "vanityTitle": "psyren",
+   "latestChapter": "145",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/255-SeriesThumbnailsManga_PSY_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Ral Ω Grad",
+   "vanityTitle": "ral-grad",
+   "latestChapter": "29",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/152-SeriesThumbnailsManga_RLG_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Rosario+Vampire",
+   "vanityTitle": "rosario-vampire",
+   "latestChapter": "40",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/154-SeriesThumbnailsManga_Rosario_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Rosario+Vampire: Season II",
+   "vanityTitle": "rosario-vampire-season-ii",
+   "latestChapter": "66",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/151-SeriesThumbnailsManga_RosarioVampire2_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Rurouni Kenshin",
+   "vanityTitle": "rurouni-kenshin",
+   "latestChapter": "255",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/68-SeriesThumbnailsManga_KEN_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Rurouni Kenshin: Restoration",
+   "vanityTitle": "rurouni-kenshin-restoration",
+   "latestChapter": "10",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/680-SeriesThumbnailsManga_RKenshinRestoration_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Sand Land",
+   "vanityTitle": "sand-land",
+   "latestChapter": "14",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/169-SeriesThumbnailsManga_SLD__400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "School Judgment",
+   "vanityTitle": "school-judgment-gakkyu-hotei",
+   "latestChapter": "22",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/833-SeriesThumbManga_SchoolJ_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Takama-ga-hara",
+   "vanityTitle": "takama-ga-hara",
+   "latestChapter": "17",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/600-SeriesThumbnailsManga_Takama_v2_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Tegami Bachi",
+   "vanityTitle": "tegami-bachi",
+   "latestChapter": "99",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/205-SeriesThumbnailsManga_TEG_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "The Prince of Tennis",
+   "vanityTitle": "prince-of-tennis",
+   "latestChapter": "379",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/92-SeriesThumbnailsManga_PoT_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Time Killers",
+   "vanityTitle": "time-killers",
+   "latestChapter": "12",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/994-SeriesThumbnailsManga_TimeKillers_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Toriko",
+   "vanityTitle": "toriko",
+   "latestChapter": "396",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/244-SeriesThumbnailsManga_TOR_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Yu-Gi-Oh!",
+   "vanityTitle": "yu-gi-oh",
+   "latestChapter": "59",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/100-SeriesThumbnailsManga_YGO_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Yu-Gi-Oh! 5D's",
+   "vanityTitle": "yu-gi-oh-5d",
+   "latestChapter": "66",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/231-SeriesThumbnailsManga_YGO5D_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Yu-Gi-Oh! GX",
+   "vanityTitle": "yu-gi-oh-gx",
+   "latestChapter": "64",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/128-th-SeriesThumbnailsManga_YGOGX_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Yu-Gi-Oh! R",
+   "vanityTitle": "yu-gi-oh-r",
+   "latestChapter": "44",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/247-th-SeriesThumbnailsManga_YGOR_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Yu-Gi-Oh! Zexal",
+   "vanityTitle": "yu-gi-oh-zexal",
+   "latestChapter": "55",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/306-SeriesThumbnailsManga_YGOZexal_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Yu-Gi-Oh!: Duelist",
+   "vanityTitle": "yu-gi-oh-duelist",
+   "latestChapter": "219",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/256-th-SeriesThumbnailsManga_YGODuelist_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Yu-Gi-Oh!: Millennium World",
+   "vanityTitle": "yu-gi-oh-millennium-world",
+   "latestChapter": "66",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/286-th-SeriesThumbnailsManga_YGOMillennium_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "ZOMBIEPOWDER.",
+   "vanityTitle": "zombiepowder",
+   "latestChapter": "26",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/102-SeriesThumbnailsManga_ZombiePowder_v2_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "élDLIVE",
+   "vanityTitle": "eldlive",
+   "latestChapter": "64",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1660-WSJ_elDLIVE_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Juni Taisen: Zodiac War (manga)",
+   "vanityTitle": "juni-taisen-zodiac-war-manga",
+   "latestChapter": "29",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/524-th-WSJ_JuniTaisenManga_400x320_v2.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Astra Lost in Space",
+   "vanityTitle": "astra-lost-in-space",
+   "latestChapter": "49",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1588-WSJ_Astra_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Naruto",
+   "vanityTitle": "naruto",
+   "latestChapter": "700",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1-th-SeriesThumbnailsManga_NAR_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "The Emperor and I",
+   "vanityTitle": "the-emperor-and-i",
+   "latestChapter": "38",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1564-SeriesThumbnailsManga_Penguin_v2_400x320.jpg",
+   "chapters": []
+  }
+ ]
+}

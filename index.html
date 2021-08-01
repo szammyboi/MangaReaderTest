@@ -1,1 +1,293 @@
-<h1>Marcus is a loser</h1>
+<!---
+   __/\\\\\\\\\\\\\\\_______/\\\\\_______/\\\\\\\\\\\\__________/\\\\\______
+    _\///////\\\/////______/\\\///\\\____\/\\\////////\\\______/\\\///\\\____
+     _______\/\\\_________/\\\/__\///\\\__\/\\\______\//\\\___/\\\/__\///\\\__
+      _______\/\\\________/\\\______\//\\\_\/\\\_______\/\\\__/\\\______\//\\\_
+       _______\/\\\_______\/\\\_______\/\\\_\/\\\_______\/\\\_\/\\\_______\/\\\_
+        _______\/\\\_______\//\\\______/\\\__\/\\\_______\/\\\_\//\\\______/\\\__
+         _______\/\\\________\///\\\__/\\\____\/\\\_______/\\\___\///\\\__/\\\____
+          _______\/\\\__________\///\\\\\/_____\/\\\\\\\\\\\\/______\///\\\\\/_____
+           _______\///_____________\/////_______\////////////__________\/////_______
+   
+   
+   		* HORIZONTAL NO SCROLL UI *
+           * MAYBE IMPLEMENT A FAVORITING SYSTEM *
+   
+   
+   -->
+   <html>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+                background-image: url("https://i.ibb.co/cQGyvgM/dot-grid.jpg");
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                scrollbar-width: none;
+                /* Firefox */
+            }
+    
+            body::-webkit-scrollbar {
+                display: none;
+            }
+    
+            #series {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                border-radius: 15px;
+            }
+    
+            a {
+                text-decoration: none;
+                margin: 25px;
+                width: auto;
+                height: auto;
+                background-color: white;
+                border-radius: 19px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                transition: width 1s, height 1s;
+            }
+    
+            a:hover {
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 150px -20px, rgba(0, 0, 0, 0.3) 0px 30px 120px -30px;
+                transition: width 1s, height 1s;
+            }
+    
+            a:hover .cardimg {
+                width: 16.5vw;
+                height: 14.5vw;
+                transition: width 1s, height 1s;
+            }
+    
+            a:hover .text {
+                font-size: 30px;
+                transition: width 1s, height 1s;
+            }
+    
+            .card {
+                width: fit-content;
+                height: fit-content;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                border-radius: 15px;
+            }
+    
+            .text {
+                font-family: 'Lato', sans-serif;
+                font-size: 25px;
+                text-decoration: none;
+                color: black;
+                width: auto;
+                text-align: center;
+                width: 15vw;
+                background-color: white;
+                height: 6vh;
+                transition: height 1s, width 1s;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .cardimg {
+                width: 15vw;
+                height: 13vw;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                transition: height 1s, width 1s;
+            }
+    
+            h1 {
+                font-family: 'Lato', sans-serif;
+                font-size: 25px;
+                overflow: hidden;
+                line-height: 2vh;
+                vertical-align: center;
+                width: 13vw;
+                max-height: 4vh;
+            }
+    
+            #title {
+                font-family: 'Lato', sans-serif;
+                font-size: 100px;
+                width: 100vw;
+                height: auto;
+                text-align: center;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                background-image: linear-gradient(to right, #e14fad 0%, #f9d423 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-animation: hue 10s infinite linear;
+            }
+    
+            @keyframes hue {
+                from {
+                    filter: hue-rotate(0deg);
+                }
+    
+                to {
+                    filter: hue-rotate(-360deg);
+                }
+            }
+    
+            #spacer {
+                background-image: linear-gradient(to right, #e14fad 0%, #f9d423 100%);
+                -webkit-animation: hue 10s infinite linear;
+                width: 100vw;
+                height: 1vh;
+            }
+    
+            #header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+                background-color: white;
+            }
+    
+            input {
+                border: none;
+                -webkit-appearance: none;
+            }
+    
+            input:focus {
+                outline: none;
+                border: none;
+                -webkit-appearance: none;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="header">
+            <input id="title" placeholder="ALL MANGA" autocomplete="false" name="hidden" type="text"></input>
+            <div id="spacer"></div>
+        </div>
+        <div id="series"></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+        <script>
+            var json
+            $.ajax("http://www.chemistry-tutor.com/update", {
+                success: function (data) {
+                    json = data
+                    gotJSON()
+                },
+                error: function () {
+                    console.log("no worky")
+                }
+            });
+    
+            function gotJSON() {
+                for (i = 0; i < json.manga.length; i++) {
+    
+                    var cardLink = $("<a>", {
+                        //href: "http://localhost:3000/reader/" + json.manga[i].vanityTitle + "/1",
+                        href: "http://www.chemistry-tutor.com/reader/" + json.manga[i].vanityTitle,
+                        id: json.manga[i].vanityTitle
+                    });
+                    var newDiv = $("<div>", {
+                        class: "card"
+                    });
+                    var newCardImage = $("<img>", {
+                        src: json.manga[i].thumbnail,
+                        class: "cardimg"
+                    })
+                    var textContainer = $("<div>", {
+                        class: "text"
+                    });
+                    var h1 = $("<h1>", {
+                        text: json.manga[i].title
+                    })
+                    newDiv.append(newCardImage);
+    
+                    textContainer.append(h1);
+                    newDiv.append(textContainer);
+                    cardLink.append(newDiv);
+    
+                    if (json.manga[i].vanityTitle == "one-piece") {
+                        //cardLink.css("order", 0)
+                        cardLink.css("order", json.manga[i].title.charCodeAt(0))
+                    } else {
+                        cardLink.css("order", json.manga[i].title.charCodeAt(0))
+                    }
+    
+                    $("#series").append(cardLink);
+                }
+            }
+    
+            $('#title').on('input', function () {
+                var query = $("#title").val().toUpperCase()
+                for (i = 0; i < json.manga.length; i++) {
+                    var t = json.manga[i].title.toUpperCase()
+                    if (t.includes(query)) {
+                        $("#" + json.manga[i].vanityTitle).css('display', "block");
+                    } else {
+                        $("#" + json.manga[i].vanityTitle).css('display', "none");
+                    }
+                }
+            });
+    
+    
+            function searchUPPERCASE(e) {
+                var charInput = e.keyCode;
+                if ((charInput >= 97) && (charInput <= 122)) {
+                    if (!e.ctrlKey && !e.metaKey && !e.altKey) {
+                        var newChar = charInput - 32;
+                        var start = e.target.selectionStart;
+                        var end = e.target.selectionEnd;
+                        e.target.value = e.target.value.substring(0, start) + String.fromCharCode(newChar) + e.target.value
+                            .substring(end);
+                        e.target.setSelectionRange(start + 1, start + 1);
+                        e.preventDefault();
+    
+                        var query = $("#title").val().toUpperCase()
+                        for (i = 0; i < json.manga.length; i++) {
+                            var t = json.manga[i].title.toUpperCase()
+                            if (t.includes(query)) {
+                                $("#" + json.manga[i].vanityTitle).css('display', "block");
+                            } else {
+                                $("#" + json.manga[i].vanityTitle).css('display', "none");
+                            }
+    
+                            if ("THE GOAT".includes(query) || "GOATPIECE".includes(query)) {
+                                $("#" + "one-piece").css('display', "block");
+                            }
+    
+                            if ("GAY".includes(query) || "SUSSY".includes(query)) {
+                                if (t.includes("JOJO")) {
+                                    $("#" + json.manga[i].vanityTitle).css('display', "block");
+                                }
+                            }
+                        }
+                        if ("THE GOAT".includes(query) || "GOATPIECE".includes(query)) {
+                            $("#" + "one-piece").css('display', "block");
+                        }
+                    }
+                }
+            }
+    
+            document.getElementById("title").addEventListener("keypress", searchUPPERCASE, false);
+        </script>
+    </body>
+    
+    </html>
