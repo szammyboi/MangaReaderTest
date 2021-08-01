@@ -13,7 +13,7 @@ import (
 var updatedToday bool
 
 func hiddenPage(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "hidden.html")
+	http.ServeFile(w, r, "manga_full.json")
 }
 
 func mainPage(w http.ResponseWriter, r *http.Request) {
