@@ -12,6 +12,10 @@ import (
 
 var updatedToday bool
 
+func hiddenPage(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "hidden.html")
+}
+
 func mainPage(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "index.html")
 }
@@ -45,7 +49,8 @@ func seriesJSON(w http.ResponseWriter, r *http.Request) {
 func main() {
 	updatedToday = false
 	webRouter := mux.NewRouter().StrictSlash(true)
-	webRouter.HandleFunc("/", mainPage)
+	webRouter.HandleFunc("/", hiddenPage)
+	webRouter.HandleFunc("/browse", mainPage)
 	webRouter.HandleFunc("/update", update)
 	webRouter.HandleFunc("/json/{series}", seriesJSON)
 	PORT := os.Getenv("PORT")
