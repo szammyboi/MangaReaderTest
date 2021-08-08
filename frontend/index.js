@@ -91,17 +91,14 @@ function displayToCanvas() {
     leftCtx = document.getElementById("left").getContext("2d");
     rightCtx = document.getElementById("right").getContext("2d");
 
-    rightImage = new Image();
-    rightImage.src = currentPages[currentPage].url;
+    rightImage = document.getElementById("" + currentPage);
+    leftImage = document.getElementById("" + (currentPage+1));
 
 
     rightImage.onload = function () {
-        //drawPage(rightImage, rightCtx);
-
-        leftImage = new Image();
-        leftImage.src = currentPages[currentPage + 1].url;
+        drawPage(rightImage, rightCtx);
         leftImage.onload = function () {
-            //drawPage(leftImage, leftCtx);
+            drawPage(leftImage, leftCtx);
         }
     }
 
