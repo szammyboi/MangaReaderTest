@@ -65,8 +65,12 @@ async function loadChapter() {
                     url: pageLinks[i],
                     id: i
                 })
-
-                $("#imgcontainer").append('<img>', {id: i, src: pageLinks[i]})
+                
+                var img = $('<img />', { 
+                    id: i,
+                    src: pageLinks[i],
+                  });
+                $("#imgcontainer").append(img)
             }
 
 
