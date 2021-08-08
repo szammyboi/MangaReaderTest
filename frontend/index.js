@@ -94,15 +94,9 @@ function displayToCanvas() {
     rightImage = document.getElementById("" + currentPage);
     leftImage = document.getElementById("" + (currentPage+1));
 
-
-    rightImage.onload = function () {
-        drawPage(rightImage, rightCtx);
-        leftImage.onload = function () {
-            drawPage(leftImage, leftCtx);
-        }
-    }
-
-
+    console.log(currentPage);
+    drawPage(rightImage, rightCtx);
+    drawPage(leftImage, leftCtx);
 }
 
 
