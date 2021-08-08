@@ -88,8 +88,6 @@ github.com/golang/protobuf/proto
 github.com/gorilla/mux
 # github.com/jmespath/go-jmespath v0.4.0
 github.com/jmespath/go-jmespath
-# github.com/joho/godotenv v1.3.0
-## explicit
 # github.com/kennygrant/sanitize v1.2.4
 ## explicit
 github.com/kennygrant/sanitize

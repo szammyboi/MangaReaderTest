@@ -90,12 +90,12 @@ function displayToCanvas() {
 
 
     rightImage.onload = function () {
-        drawPage(rightImage, rightCtx);
+        //drawPage(rightImage, rightCtx);
 
         leftImage = new Image();
         leftImage.src = currentPages[currentPage + 1].url;
         leftImage.onload = function () {
-            drawPage(leftImage, leftCtx);
+            //drawPage(leftImage, leftCtx);
         }
     }
 

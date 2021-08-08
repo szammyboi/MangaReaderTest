@@ -110,6 +110,8 @@ func main() {
 	webRouter.HandleFunc("/assets/{file}", assets)
 
 	PORT := os.Getenv("PORT")
-
+	if PORT == "" {
+		PORT = "1000"
+	}
 	log.Fatal(http.ListenAndServe(":"+PORT, webRouter))
 }
