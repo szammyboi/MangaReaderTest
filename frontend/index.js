@@ -67,7 +67,7 @@ async function loadChapter() {
                 })
                 test = new Image();
                 test.src = pageLinks[i]
-                document.body.append(test)
+                document.getElementById("imgcontainer").append(test)
             }
 
 
