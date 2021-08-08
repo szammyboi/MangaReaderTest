@@ -65,9 +65,8 @@ async function loadChapter() {
                     url: pageLinks[i],
                     id: i
                 })
-                test = new Image();
-                test.src = pageLinks[i]
-                document.getElementById("imgcontainer").append(test)
+
+                $("#imgcontainer").append('<img>', {id: i, src: pageLinks[i]})
             }
 
 
