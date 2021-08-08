@@ -70,6 +70,15 @@ func findChapter(chapters *[]Chapter, tag string) *Chapter {
 	return nil
 }
 
+func findChapterAndPosition(chapters *[]Chapter, tag string) (*Chapter, int) {
+	for i, savedChapter := range *chapters {
+		if savedChapter.Chapter == tag {
+			return &savedChapter, i
+		}
+	}
+	return nil, 0
+}
+
 func exists(path string) bool {
 	if _, err := os.Stat(path); err == nil {
 		/*exists*/

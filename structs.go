@@ -17,6 +17,7 @@ type Chapter struct {
 	MangaID  string `json:"mangaID"`
 	DataURL  string `json:"dataURL"`
 	ImageURL string `json:"imageURL"`
+	Saved    bool   `json:"saved"`
 }
 
 type ImageLinks struct {

@@ -2,16 +2,22 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
 	"time"
 
 	"github.com/gorilla/mux"
+
+	"github.com/aws/aws-sdk-go/aws"
+	"github.com/aws/aws-sdk-go/aws/session"
+	"github.com/aws/aws-sdk-go/service/s3/s3manager"
 )
 
 var updatedToday bool
+var sess *session.Session
+var uploader *s3manager.Uploader
+var bucket string
 
 func mainPage(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "index.html")
@@ -49,15 +55,10 @@ func getChapter(w http.ResponseWriter, r *http.Request) {
 	series := vars["series"]
 	chapter := vars["chapter"]
 
-	folder, _ := ioutil.ReadDir(fmt.Sprintf("./Series/%s/Chapters/%s", series, chapter))
-	if len(folder) == 0 {
-		fetchChapter(series, chapter)
-		folder, _ = ioutil.ReadDir(fmt.Sprintf("./Series/%s/Chapters/%s", series, chapter))
-	}
-
+	chapterSize := fetchChapter(series, chapter)
 	alllinks := ImageLinks{}
-	baseURL := fmt.Sprintf("http://www.chemistry-tutor.com/getPage/%s/%s/", series, chapter)
-	for i := 0; i < len(folder); i++ {
+	baseURL := fmt.Sprintf("https://mangastorage.s3.us-east-2.amazonaws.com/Series/%s/%s/", series, chapter)
+	for i := 0; i < chapterSize; i++ {
 		alllinks.Links = append(alllinks.Links, fmt.Sprintf(baseURL+"%d.jpg", i))
 	}
 
@@ -88,6 +89,15 @@ func assets(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	updatedToday = false
+	sess, _ = session.NewSession(&aws.Config{
+		Region: aws.String("us-east-2")},
+	)
+
+	// Create S3 service client
+	//svc := s3.New(sess)
+	uploader = s3manager.NewUploader(sess)
+
+	bucket = os.Getenv("S3_BUCKET")
 	webRouter := mux.NewRouter().StrictSlash(true)
 	webRouter.HandleFunc("/", mainPage)
 	webRouter.HandleFunc("/update", update)

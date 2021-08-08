@@ -196,6 +196,7 @@ func updateChapter(vanityTitle string) {
 			MangaID:  mangaID,
 			DataURL:  "https://www.viz.com" + target,
 			ImageURL: "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=" + mangaID + "&page=",
+			Saved:    false,
 		}
 
 		chapters = append(chapters, newChapter)
