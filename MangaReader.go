@@ -56,7 +56,7 @@ func getChapter(w http.ResponseWriter, r *http.Request) {
 	}
 
 	alllinks := ImageLinks{}
-	baseURL := fmt.Sprintf("http://chemistry-tutor.com/getPage/%s/%s/", series, chapter)
+	baseURL := fmt.Sprintf("http://www.chemistry-tutor.com/getPage/%s/%s/", series, chapter)
 	for i := 0; i < len(folder); i++ {
 		alllinks.Links = append(alllinks.Links, fmt.Sprintf(baseURL+"%d.jpg", i))
 	}
