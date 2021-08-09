@@ -66,23 +66,25 @@ async function loadChapter() {
                     id: i
                 })
                 
+                image = new Image();
+                image.onload = function () {
+                    EXIF.getData(image, function () {
+                        console.log(EXIF.getTag(this, "ImageUniqueID"));
+                    });
+                 }
+
+                image.src = pageLinks[i];
+
                 var img = $('<img />', { 
                     id: i,
                     src: pageLinks[i],
                   });
                 $("#imgcontainer").append(img)
-
-
-                
             }
 
             $('#imgcontainer').imagesLoaded( function() {
                 console.log("Images Loaded");
                 displayToCanvas();
-
-                EXIF.getData(document.getElementById(1), function () {
-                    console.log(EXIF.getTag(this, "ImageUniqueID"));
-                });
             });
             
             
