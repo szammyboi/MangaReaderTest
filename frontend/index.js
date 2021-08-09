@@ -75,7 +75,7 @@ async function loadChapter() {
 
             $('#imgcontainer').imagesLoaded( function() {
                 console.log("Images Loaded");
-                displayToCanvas();
+                
 
                 for (i = 0; i < currentPages.length; i++) {
                     EXIF.getData(document.getElementById(i), function () {
@@ -83,6 +83,7 @@ async function loadChapter() {
                         currentKeys.push(nkey);
                     });
                 }
+                displayToCanvas();
                 
             });
             
