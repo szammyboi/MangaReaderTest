@@ -108,20 +108,19 @@ function displayToCanvas() {
     leftImage = document.getElementById("" + (currentPage+1));
 
     console.log(currentPage);
-    drawPage(rightImage, rightCtx);
-    drawPage(leftImage, leftCtx);
+    drawPage(rightImage, rightCtx, currentPage);
+    drawPage(leftImage, leftCtx, currentPage+1);
 }
 
 
-function drawPage(image, ctx) {
+function drawPage(image, ctx, keylocation) {
     _ = parseInt(image.naturalWidth - 90);
     v = parseInt(image.naturalHeight - 140);
 
     ctx.canvas.width = _;
     ctx.canvas.height = v;
 
-    EXIF.getData(image, function () {
-        key = EXIF.getTag(this, "ImageUniqueID");
+        key = currentKeys[keylocation]
         P = key.split(":");
 
         w = Math.floor(_ / 10);
@@ -136,7 +135,6 @@ function drawPage(image, ctx) {
             m = 0; m < P.length; m++)
             P[m] = parseInt(P[m], 16),
             ctx.drawImage(image, Math.floor((m % 8 + 1) * (w + 10)), Math.floor((Math.floor(m / 8) + 1) * (b + 10)), Math.floor(w), Math.floor(b), Math.floor((P[m] % 8 + 1) * w), Math.floor((Math.floor(P[m] / 8) + 1) * b), Math.floor(w), Math.floor(b));
-    });
 }
 
 function selectChapter() {
