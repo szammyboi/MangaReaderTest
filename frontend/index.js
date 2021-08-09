@@ -82,9 +82,6 @@ async function loadChapter() {
                         nkey = EXIF.getTag(this, "ImageUniqueID");
                         currentKeys.push(nkey);
                     });
-                    if (i == 2) {
-                        displayToCanvas();
-                    }
                 }
             });
             
@@ -122,7 +119,8 @@ function drawPage(image, ctx, keylocation) {
     ctx.canvas.width = _;
     ctx.canvas.height = v;
 
-        key = currentKeys[keylocation]
+        key = currentKeys[keylocation];
+        console.log(key);
         P = key.split(":");
 
         w = Math.floor(_ / 10);
