@@ -73,7 +73,10 @@ async function loadChapter() {
                 $("#imgcontainer").append(img)
             }
 
-
+            $('#imgcontainer').imagesLoaded( function() {
+                console.log("Images Loaded");
+                displayToCanvas();
+            });
             
             
             if (currentChapterIndex + 1 < chapterOptions.length) {
@@ -82,16 +85,11 @@ async function loadChapter() {
             if (currentChapterIndex - 1 >= 0) {
                 sideLoadChapter(currentChapterIndex - 1);
             }
-
-
         })
 }
 
 
-$('#imgcontainer').imagesLoaded( function() {
-    console.log("Images Loaded");
-    displayToCanvas();
-  });
+
 
   
 function displayToCanvas() {
