@@ -61,19 +61,18 @@ async function loadChapter() {
         .then(response => {
             pageLinks = response.data.links;
             for (i = 0; i < pageLinks.length; i++) {
-                EXIF.getData(image, function () {
+                var img = $('<img />', { 
+                    id: i,
+                    src: pageLinks[i],
+                  });
+                $("#imgcontainer").append(img)
+                EXIF.getData(img, function () {
                     newkey = EXIF.getTag(this, "ImageUniqueID");
                     currentPages.push({
                         url: pageLinks[i],
                         id: i,
                         key: newkey
                     })
-
-                    var img = $('<img />', { 
-                        id: i,
-                        src: pageLinks[i],
-                      });
-                    $("#imgcontainer").append(img)
                 })
             }
 
