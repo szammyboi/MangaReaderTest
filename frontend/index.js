@@ -1,6 +1,5 @@
 var chapterOptions = []
 var currentPages = []
-var currentKeys = []
 var currentPage = 0;
 var currentChapterName;
 var currentChapterIndex;
@@ -66,6 +65,7 @@ async function loadChapter() {
                     url: pageLinks[i],
                     id: i
                 })
+                
                 var img = $('<img />', { 
                     id: i,
                     src: pageLinks[i],
@@ -75,15 +75,8 @@ async function loadChapter() {
 
             $('#imgcontainer').imagesLoaded( function() {
                 console.log("Images Loaded");
-                
-
-                for (i = 0; i < currentPages.length; i++) {
-                    EXIF.getData(document.getElementById(i), function () {
-                        nkey = EXIF.getTag(this, "ImageUniqueID");
-                        currentKeys.push(nkey);
-                    });
-                }
-            });
+                displayToCanvas();
+              });
             
             
             if (currentChapterIndex + 1 < chapterOptions.length) {
@@ -92,6 +85,8 @@ async function loadChapter() {
             if (currentChapterIndex - 1 >= 0) {
                 sideLoadChapter(currentChapterIndex - 1);
             }
+
+
         })
 }
 
@@ -107,20 +102,20 @@ function displayToCanvas() {
     leftImage = document.getElementById("" + (currentPage+1));
 
     console.log(currentPage);
-    drawPage(rightImage, rightCtx, currentPage);
-    drawPage(leftImage, leftCtx, currentPage+1);
+    drawPage(rightImage, rightCtx);
+    drawPage(leftImage, leftCtx);
 }
 
 
-function drawPage(image, ctx, keylocation) {
+function drawPage(image, ctx) {
     _ = parseInt(image.naturalWidth - 90);
     v = parseInt(image.naturalHeight - 140);
 
     ctx.canvas.width = _;
     ctx.canvas.height = v;
 
-        key = currentKeys[keylocation];
-        console.log(key);
+    EXIF.getData(image, function () {
+        key = EXIF.getTag(this, "ImageUniqueID");
         P = key.split(":");
 
         w = Math.floor(_ / 10);
@@ -135,6 +130,7 @@ function drawPage(image, ctx, keylocation) {
             m = 0; m < P.length; m++)
             P[m] = parseInt(P[m], 16),
             ctx.drawImage(image, Math.floor((m % 8 + 1) * (w + 10)), Math.floor((Math.floor(m / 8) + 1) * (b + 10)), Math.floor(w), Math.floor(b), Math.floor((P[m] % 8 + 1) * w), Math.floor((Math.floor(P[m] / 8) + 1) * b), Math.floor(w), Math.floor(b));
+    });
 }
 
 function selectChapter() {
