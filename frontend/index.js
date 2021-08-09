@@ -127,7 +127,7 @@ function drawPage(image, ctx) {
 }
 
 function selectChapter() {
-
+    $("#imgcontainer").empty();
     var selected = $("#chapter-select").val();
     console.log("Selected: ", selected)
     var found = false;
@@ -208,6 +208,7 @@ function previous() {
 
 function nextChapter() {
     if (currentChapterIndex - 1 >= 0) {
+        $("#imgcontainer").empty();
         leftCtx = document.getElementById("left").getContext("2d");
         rightCtx = document.getElementById("right").getContext("2d");
         currentChapterIndex--;
@@ -221,6 +222,7 @@ function nextChapter() {
 
 function previousChapter() {
     if (currentChapterIndex + 1 < chapterOptions.length) {
+        $("#imgcontainer").empty();
         leftCtx = document.getElementById("left").getContext("2d");
         rightCtx = document.getElementById("right").getContext("2d");
         currentChapterIndex++;
