@@ -61,20 +61,10 @@ async function loadChapter() {
         .then(response => {
             pageLinks = response.data.links;
             for (i = 0; i < pageLinks.length; i++) {
-                image = new Image();
-                image.onload = function () {
-                    EXIF.getData(image, function () {
-                        newkey = EXIF.getTag(this, "ImageUniqueID");
-                        currentPages.push({
-                            url: pageLinks[i],
-                            id: i,
-                            key: newkey
-                        })
-                    });
-                 }
-
-                image.src = pageLinks[i];
-
+                currentPages.push({
+                    url: pageLinks[i],
+                    id: i
+                })
                 var img = $('<img />', { 
                     id: i,
                     src: pageLinks[i],
@@ -85,6 +75,14 @@ async function loadChapter() {
             $('#imgcontainer').imagesLoaded( function() {
                 console.log("Images Loaded");
                 displayToCanvas();
+
+
+                for (i = 0; i < currentPages.length; i++) {
+                    EXIF.getData(document.getElementById(1), function () {
+                        console.log(EXIF.getTag(this, "ImageUniqueID"));
+                    });
+                }
+                
             });
             
             
