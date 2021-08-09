@@ -1,5 +1,6 @@
 var chapterOptions = []
 var currentPages = []
+var currentKeys = []
 var currentPage = 0;
 var currentChapterName;
 var currentChapterIndex;
@@ -77,14 +78,9 @@ async function loadChapter() {
                 displayToCanvas();
 
                 for (i = 0; i < currentPages.length; i++) {
-                    EXIF.getData(document.getElementById(1), function () {
+                    EXIF.getData(document.getElementById(i), function () {
                         nkey = EXIF.getTag(this, "ImageUniqueID");
-                        newpage = {
-                            url: currentPages[i].url,
-                            id: i,
-                            key: nkey
-                        }
-                        currentPages[i] = newpage;
+                        currentKeys.push(nkey);
                     });
                 }
                 
