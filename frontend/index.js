@@ -79,11 +79,12 @@ async function loadChapter() {
                 for (i = 0; i < currentPages.length; i++) {
                     EXIF.getData(document.getElementById(1), function () {
                         nkey = EXIF.getTag(this, "ImageUniqueID");
-                        currentPages[i] = {
+                        newpage = {
                             url: currentPages[i].url,
                             id: i,
                             key: nkey
                         }
+                        currentPages[i] = newpage;
                     });
                 }
                 
