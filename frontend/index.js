@@ -76,10 +76,14 @@ async function loadChapter() {
                 console.log("Images Loaded");
                 displayToCanvas();
 
-
                 for (i = 0; i < currentPages.length; i++) {
                     EXIF.getData(document.getElementById(1), function () {
-                        console.log(EXIF.getTag(this, "ImageUniqueID"));
+                        nkey = EXIF.getTag(this, "ImageUniqueID");
+                        currentPages[i] = {
+                            url: currentPages[i].url,
+                            id: i,
+                            key: nkey
+                        }
                     });
                 }
                 
