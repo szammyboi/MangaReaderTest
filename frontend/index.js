@@ -82,9 +82,10 @@ async function loadChapter() {
                         nkey = EXIF.getTag(this, "ImageUniqueID");
                         currentKeys.push(nkey);
                     });
+                    if (i == 2) {
+                        displayToCanvas();
+                    }
                 }
-                displayToCanvas();
-                
             });
             
             
