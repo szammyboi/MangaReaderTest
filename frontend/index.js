@@ -74,8 +74,8 @@ async function loadChapter() {
             }
 
 
-            console.log("Images Loaded");
-            displayToCanvas();
+            
+            
             if (currentChapterIndex + 1 < chapterOptions.length) {
                 sideLoadChapter(currentChapterIndex + 1);
             }
@@ -87,6 +87,13 @@ async function loadChapter() {
         })
 }
 
+
+$('#imgcontainer').imagesLoaded( function() {
+    console.log("Images Loaded");
+    displayToCanvas();
+  });
+
+  
 function displayToCanvas() {
     leftCtx = document.getElementById("left").getContext("2d");
     rightCtx = document.getElementById("right").getContext("2d");
