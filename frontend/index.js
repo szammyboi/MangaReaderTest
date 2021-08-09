@@ -61,15 +61,15 @@ async function loadChapter() {
         .then(response => {
             pageLinks = response.data.links;
             for (i = 0; i < pageLinks.length; i++) {
-                currentPages.push({
-                    url: pageLinks[i],
-                    id: i
-                })
-                
                 image = new Image();
                 image.onload = function () {
                     EXIF.getData(image, function () {
-                        console.log(EXIF.getTag(this, "ImageUniqueID"));
+                        newkey = EXIF.getTag(this, "ImageUniqueID");
+                        currentPages.push({
+                            url: pageLinks[i],
+                            id: i,
+                            key: newkey
+                        })
                     });
                  }
 
