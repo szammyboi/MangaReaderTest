@@ -72,14 +72,17 @@ async function loadChapter() {
                   });
                 $("#imgcontainer").append(img)
 
-                EXIF.getData(img, function () {
-                    console.log(EXIF.getTag(this, "ImageUniqueID"));
-                });
+
+                
             }
 
             $('#imgcontainer').imagesLoaded( function() {
                 console.log("Images Loaded");
                 displayToCanvas();
+
+                EXIF.getData(document.getElementById(1), function () {
+                    console.log(EXIF.getTag(this, "ImageUniqueID"));
+                });
             });
             
             
