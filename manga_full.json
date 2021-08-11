@@ -3651,14 +3651,14 @@
      "mangaID": "11635",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-500/chapter/11635?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=11635&page=",
-     "saved": false
+     "saved": true
     },
     {
      "chapter": "499",
      "mangaID": "11634",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-499/chapter/11634?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=11634&page=",
-     "saved": false
+     "saved": true
     },
     {
      "chapter": "498",
@@ -16107,9 +16107,16 @@
   {
    "title": "Spy x Family",
    "vanityTitle": "spy-x-family",
-   "latestChapter": "50",
+   "latestChapter": "51",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/632-th-SJ_SpyFamily_400x320_jpg",
    "chapters": [
+    {
+     "chapter": "51",
+     "mangaID": "23033",
+     "dataURL": "https://www.viz.com/shonenjump/spy-x-family-chapter-51/chapter/23033?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23033&page=",
+     "saved": false
+    },
     {
      "chapter": "50",
      "mangaID": "22818",
@@ -17299,9 +17306,16 @@
   {
    "title": "Kaiju No. 8",
    "vanityTitle": "kaiju-no-8",
-   "latestChapter": "40",
+   "latestChapter": "41",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/724-th-072620_Thumbnail_Kaiju8_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "41",
+     "mangaID": "23032",
+     "dataURL": "https://www.viz.com/shonenjump/kaiju-no-8-chapter-41/chapter/23032?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23032&page=",
+     "saved": false
+    },
     {
      "chapter": "40",
      "mangaID": "22815",
@@ -18765,9 +18779,16 @@
   {
    "title": "Seraph of the End",
    "vanityTitle": "seraph-of-the-end",
-   "latestChapter": "104",
+   "latestChapter": "105",
    "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/334-SeriesThumbnailsManga_SER_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "105",
+     "mangaID": "22801",
+     "dataURL": "https://www.viz.com/shonenjump/seraph-of-the-end-chapter-105/chapter/22801?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22801&page=",
+     "saved": false
+    },
     {
      "chapter": "104",
      "mangaID": "22631",
@@ -19501,9 +19522,16 @@
   {
    "title": "Twin Star Exorcists",
    "vanityTitle": "twin-star-exorcists",
-   "latestChapter": "95",
+   "latestChapter": "96",
    "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/365-SeriesThumbnailsManga_TSE_v2_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "96",
+     "mangaID": "22802",
+     "dataURL": "https://www.viz.com/shonenjump/twin-star-exorcists-chapter-96/chapter/22802?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22802&page=",
+     "saved": false
+    },
     {
      "chapter": "95",
      "mangaID": "22632",
@@ -20181,9 +20209,16 @@
   {
    "title": "World Trigger",
    "vanityTitle": "world-trigger",
-   "latestChapter": "210",
+   "latestChapter": "211",
    "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/353-SeriesThumbnailsManga_WTG_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "211",
+     "mangaID": "22804",
+     "dataURL": "https://www.viz.com/shonenjump/world-trigger-chapter-211/chapter/22804?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22804&page=",
+     "saved": false
+    },
     {
      "chapter": "210",
      "mangaID": "22803",

@@ -1,6 +1,41 @@
 {
  "manga": [
   {
+   "title": "Spy x Family",
+   "vanityTitle": "spy-x-family",
+   "latestChapter": "51",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/632-th-SJ_SpyFamily_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Kaiju No. 8",
+   "vanityTitle": "kaiju-no-8",
+   "latestChapter": "41",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/724-th-072620_Thumbnail_Kaiju8_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Seraph of the End",
+   "vanityTitle": "seraph-of-the-end",
+   "latestChapter": "105",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/334-SeriesThumbnailsManga_SER_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Twin Star Exorcists",
+   "vanityTitle": "twin-star-exorcists",
+   "latestChapter": "96",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/365-SeriesThumbnailsManga_TSE_v2_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "World Trigger",
+   "vanityTitle": "world-trigger",
+   "latestChapter": "211",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/353-SeriesThumbnailsManga_WTG_400x320.jpg",
+   "chapters": []
+  },
+  {
    "title": "My Hero Academia",
    "vanityTitle": "my-hero-academia",
    "latestChapter": "321",
@@ -162,24 +197,10 @@
    "chapters": []
   },
   {
-   "title": "Spy x Family",
-   "vanityTitle": "spy-x-family",
-   "latestChapter": "50",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/632-th-SJ_SpyFamily_400x320_jpg",
-   "chapters": []
-  },
-  {
    "title": "My Hero Academia: Vigilantes",
    "vanityTitle": "my-hero-academia-vigilantes",
    "latestChapter": "106",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/520-th-SeriesThumbnailsManga_MHVigilante_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Kaiju No. 8",
-   "vanityTitle": "kaiju-no-8",
-   "latestChapter": "40",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/724-th-072620_Thumbnail_Kaiju8_400x320.jpg",
    "chapters": []
   },
   {
@@ -236,27 +257,6 @@
    "vanityTitle": "blue-exorcist",
    "latestChapter": "132",
    "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/278-SeriesThumbnailsManga_BEX_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Seraph of the End",
-   "vanityTitle": "seraph-of-the-end",
-   "latestChapter": "104",
-   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/334-SeriesThumbnailsManga_SER_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Twin Star Exorcists",
-   "vanityTitle": "twin-star-exorcists",
-   "latestChapter": "95",
-   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/365-SeriesThumbnailsManga_TSE_v2_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "World Trigger",
-   "vanityTitle": "world-trigger",
-   "latestChapter": "210",
-   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/353-SeriesThumbnailsManga_WTG_400x320.jpg",
    "chapters": []
   },
   {
