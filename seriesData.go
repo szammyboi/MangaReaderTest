@@ -25,12 +25,15 @@ __/\\\\\\\\\\\\\\\_______/\\\\\_______/\\\\\\\\\\\\__________/\\\\\______
 package main
 
 import (
+	"bytes"
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
 	"strings"
 
+	"github.com/aws/aws-sdk-go/service/s3/s3manager"
 	"github.com/gocolly/colly"
 )
 
@@ -106,13 +109,10 @@ func returnSeriesData() []Series {
 	return mangaList
 }
 
-func updateDatabase() {
+func updateDatabase(rawJSON []byte) []byte {
 	freshScan := returnSeriesData()
-	jsonFile, _ := os.Open("manga_min.json")
-	defer jsonFile.Close()
-	byteValue, _ := ioutil.ReadAll(jsonFile)
 	var dbManga AllManga
-	json.Unmarshal(byteValue, &dbManga)
+	json.Unmarshal(rawJSON, &dbManga)
 	database := dbManga.Manga
 
 	// vanity titles then call update chapter on that
@@ -139,7 +139,23 @@ func updateDatabase() {
 		Manga: freshScan,
 	}
 
-	saveToJSON(allManga, "manga_min.json")
+	json := toJSON(allManga)
+	key := "Series/manga_min.json"
+	test2 := bytes.NewReader(json)
+	upParams := &s3manager.UploadInput{
+		Bucket: &bucket,
+		Key:    &key,
+		Body:   test2,
+	}
+
+	result, uploaderr := uploader.Upload(upParams)
+	if uploaderr != nil {
+		log.Fatal(uploaderr)
+	}
+	fmt.Println(result)
+
+	return json
+	//saveToJSON(allManga, "manga_min.json")
 }
 
 func updateChapter(vanityTitle string) {

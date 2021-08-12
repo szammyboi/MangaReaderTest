@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -25,17 +26,36 @@ func mainPage(w http.ResponseWriter, r *http.Request) {
 
 func update(w http.ResponseWriter, r *http.Request) {
 	start := time.Now()
+	var writeData []byte
 
+	client := &http.Client{}
+	mangaMinReq, requestErr := http.NewRequest("GET", "https://dwmc7ixdnoavh.cloudfront.net/Series/manga_min.json", nil)
+	if requestErr != nil {
+		log.Fatal(requestErr)
+	}
+
+	mangaMin, responseErr := client.Do(mangaMinReq)
+	if responseErr != nil {
+		log.Fatal(responseErr)
+	}
+
+	if mangaMin.StatusCode == http.StatusOK {
+		writeData, _ = ioutil.ReadAll(mangaMin.Body)
+	}
+
+	// fix timing here bruv
 	if !updatedToday && time.Now().Hour() >= 12 {
 		fmt.Println("Updated DB")
-		updateDatabase()
+		writeData = updateDatabase(writeData)
 		updatedToday = true
-	} else if updatedToday {
+	} else if updatedToday && time.Now().Hour() < 12 {
 		updatedToday = false
 	}
+
 	fmt.Println(time.Since(start))
 
-	http.ServeFile(w, r, "manga_min.json")
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(writeData)
 }
 
 func seriesJSON(w http.ResponseWriter, r *http.Request) {
