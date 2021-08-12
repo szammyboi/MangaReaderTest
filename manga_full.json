@@ -3,29 +3,36 @@
   {
    "title": "One Piece",
    "vanityTitle": "one-piece",
-   "latestChapter": "1020",
+   "latestChapter": "1021",
    "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/526-SeriesThumb_OP_400x320.png",
    "chapters": [
+    {
+     "chapter": "1021",
+     "mangaID": "23053",
+     "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-1021/chapter/23053?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23053&page=",
+     "saved": false
+    },
     {
      "chapter": "1020",
      "mangaID": "22958",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-1020/chapter/22958?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22958&page=",
-     "saved": true
+     "saved": false
     },
     {
      "chapter": "1019",
      "mangaID": "22812",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-1019/chapter/22812?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22812&page=",
-     "saved": true
+     "saved": false
     },
     {
      "chapter": "1018",
      "mangaID": "22773",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-1018/chapter/22773?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22773&page=",
-     "saved": true
+     "saved": false
     },
     {
      "chapter": "1017",
@@ -3651,14 +3658,14 @@
      "mangaID": "11635",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-500/chapter/11635?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=11635&page=",
-     "saved": true
+     "saved": false
     },
     {
      "chapter": "499",
      "mangaID": "11634",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-499/chapter/11634?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=11634&page=",
-     "saved": true
+     "saved": false
     },
     {
      "chapter": "498",
@@ -7130,21 +7137,21 @@
      "mangaID": "5092",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-3/chapter/5092?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=5092&page=",
-     "saved": false
+     "saved": true
     },
     {
      "chapter": "2",
      "mangaID": "5091",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-2/chapter/5091?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=5091&page=",
-     "saved": false
+     "saved": true
     },
     {
      "chapter": "1",
      "mangaID": "5090",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-1/chapter/5090?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=5090&page=",
-     "saved": false
+     "saved": true
     }
    ]
   },
@@ -7180,9 +7187,16 @@
   {
    "title": "My Hero Academia",
    "vanityTitle": "my-hero-academia",
-   "latestChapter": "321",
+   "latestChapter": "322",
    "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/371-SeriesThumbnails_MHA__400x320.jpg",
    "chapters": [
+    {
+     "chapter": "322",
+     "mangaID": "23051",
+     "dataURL": "https://www.viz.com/shonenjump/my-hero-academia-chapter-322/chapter/23051?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23051&page=",
+     "saved": false
+    },
     {
      "chapter": "321",
      "mangaID": "22956",
@@ -9478,9 +9492,16 @@
   {
    "title": "Blue Box",
    "vanityTitle": "blue-box",
-   "latestChapter": "15",
+   "latestChapter": "16",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/757-th-WSJ2021_issue19_Thumbnail_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "16",
+     "mangaID": "23040",
+     "dataURL": "https://www.viz.com/shonenjump/blue-box-chapter-16/chapter/23040?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23040&page=",
+     "saved": false
+    },
     {
      "chapter": "15",
      "mangaID": "22949",
@@ -9591,9 +9612,16 @@
   {
    "title": "Undead Unluck",
    "vanityTitle": "undead-unluck",
-   "latestChapter": "73",
+   "latestChapter": "74",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/693-th-011920_Thumbnail_400x320_jpg",
    "chapters": [
+    {
+     "chapter": "74",
+     "mangaID": "23055",
+     "dataURL": "https://www.viz.com/shonenjump/undead-unluck-chapter-74/chapter/23055?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23055&page=",
+     "saved": false
+    },
     {
      "chapter": "73",
      "mangaID": "22919",
@@ -10110,9 +10138,16 @@
   {
    "title": "Sakamoto Days",
    "vanityTitle": "sakamoto-days",
-   "latestChapter": "33",
+   "latestChapter": "34",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/739-th-112220_Thumbnail_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "34",
+     "mangaID": "23054",
+     "dataURL": "https://www.viz.com/shonenjump/sakamoto-days-chapter-34/chapter/23054?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23054&page=",
+     "saved": false
+    },
     {
      "chapter": "33",
      "mangaID": "22959",
@@ -10349,9 +10384,16 @@
   {
    "title": "Dr. STONE",
    "vanityTitle": "dr-stone",
-   "latestChapter": "205",
+   "latestChapter": "206",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1696-WSJ_DrStone_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "206",
+     "mangaID": "22918",
+     "dataURL": "https://www.viz.com/shonenjump/dr-stone-chapter-206/chapter/22918?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22918&page=",
+     "saved": false
+    },
     {
      "chapter": "205",
      "mangaID": "22823",
@@ -11792,9 +11834,16 @@
   {
    "title": "The Elusive Samurai",
    "vanityTitle": "the-elusive-samurai",
-   "latestChapter": "26",
+   "latestChapter": "27",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/750-th-WSJ2021_issue08_Thumbnail_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "27",
+     "mangaID": "23043",
+     "dataURL": "https://www.viz.com/shonenjump/the-elusive-samurai-chapter-27/chapter/23043?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23043&page=",
+     "saved": false
+    },
     {
      "chapter": "26",
      "mangaID": "22951",
@@ -11982,9 +12031,16 @@
   {
    "title": "Mashle: Magic and Muscles",
    "vanityTitle": "mashle",
-   "latestChapter": "72",
+   "latestChapter": "73",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/694-th-012620_Thumbnail_400x320_jpg",
    "chapters": [
+    {
+     "chapter": "73",
+     "mangaID": "23048",
+     "dataURL": "https://www.viz.com/shonenjump/mashle-chapter-73/chapter/23048?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23048&page=",
+     "saved": false
+    },
     {
      "chapter": "72",
      "mangaID": "22920",
@@ -12501,9 +12557,16 @@
   {
    "title": "Ayakashi Triangle",
    "vanityTitle": "ayakashi-triangle",
-   "latestChapter": "54",
+   "latestChapter": "55",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/716-th-061420_Thumbnail_400x320_jpg",
    "chapters": [
+    {
+     "chapter": "55",
+     "mangaID": "23038",
+     "dataURL": "https://www.viz.com/shonenjump/ayakashi-triangle-chapter-55/chapter/23038?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23038&page=",
+     "saved": false
+    },
     {
      "chapter": "54",
      "mangaID": "22947",
@@ -12887,9 +12950,16 @@
   {
    "title": "Black Clover",
    "vanityTitle": "black-clover",
-   "latestChapter": "301",
+   "latestChapter": "302",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/448-th-SeriesThumbnailsManga_BLC_chapter_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "302",
+     "mangaID": "23039",
+     "dataURL": "https://www.viz.com/shonenjump/black-clover-chapter-302/chapter/23039?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23039&page=",
+     "saved": false
+    },
     {
      "chapter": "301",
      "mangaID": "22948",
@@ -15002,9 +15072,16 @@
   {
    "title": "Candy Flurry",
    "vanityTitle": "candy-flurry",
-   "latestChapter": "14",
+   "latestChapter": "15",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/762-th-WSJ2021_issue20_Thumbnail_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "15",
+     "mangaID": "23041",
+     "dataURL": "https://www.viz.com/shonenjump/candy-flurry-chapter-15/chapter/23041?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23041&page=",
+     "saved": false
+    },
     {
      "chapter": "14",
      "mangaID": "22950",
@@ -15110,723 +15187,14 @@
    "vanityTitle": "high-school-family",
    "latestChapter": "48",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/733-th-090620_Thumbnail_400x320.jpg",
-   "chapters": [
-    {
-     "chapter": "48",
-     "mangaID": "22952",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-48/chapter/22952?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22952&page=",
-     "saved": false
-    },
-    {
-     "chapter": "47",
-     "mangaID": "22825",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-47/chapter/22825?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22825&page=",
-     "saved": false
-    },
-    {
-     "chapter": "46",
-     "mangaID": "22797",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-46/chapter/22797?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22797&page=",
-     "saved": false
-    },
-    {
-     "chapter": "45",
-     "mangaID": "22763",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-45/chapter/22763?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22763&page=",
-     "saved": false
-    },
-    {
-     "chapter": "44",
-     "mangaID": "22714",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-44/chapter/22714?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22714&page=",
-     "saved": false
-    },
-    {
-     "chapter": "43",
-     "mangaID": "22662",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-43/chapter/22662?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22662&page=",
-     "saved": false
-    },
-    {
-     "chapter": "42",
-     "mangaID": "22641",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-42/chapter/22641?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22641&page=",
-     "saved": false
-    },
-    {
-     "chapter": "41",
-     "mangaID": "22614",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-41/chapter/22614?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22614&page=",
-     "saved": false
-    },
-    {
-     "chapter": "40",
-     "mangaID": "22591",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-40/chapter/22591?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22591&page=",
-     "saved": false
-    },
-    {
-     "chapter": "39",
-     "mangaID": "22565",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-39/chapter/22565?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22565&page=",
-     "saved": false
-    },
-    {
-     "chapter": "38",
-     "mangaID": "22488",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-38/chapter/22488?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22488&page=",
-     "saved": false
-    },
-    {
-     "chapter": "37",
-     "mangaID": "22445",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-37/chapter/22445?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22445&page=",
-     "saved": false
-    },
-    {
-     "chapter": "36",
-     "mangaID": "22418",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-36/chapter/22418?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22418&page=",
-     "saved": false
-    },
-    {
-     "chapter": "35",
-     "mangaID": "22363",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-35/chapter/22363?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22363&page=",
-     "saved": false
-    },
-    {
-     "chapter": "34",
-     "mangaID": "22344",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-34/chapter/22344?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22344&page=",
-     "saved": false
-    },
-    {
-     "chapter": "33",
-     "mangaID": "22319",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-33/chapter/22319?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22319&page=",
-     "saved": false
-    },
-    {
-     "chapter": "32",
-     "mangaID": "22298",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-32/chapter/22298?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22298&page=",
-     "saved": false
-    },
-    {
-     "chapter": "31",
-     "mangaID": "22224",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-31/chapter/22224?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22224&page=",
-     "saved": false
-    },
-    {
-     "chapter": "30",
-     "mangaID": "22198",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-30/chapter/22198?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22198&page=",
-     "saved": false
-    },
-    {
-     "chapter": "29",
-     "mangaID": "22154",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-29/chapter/22154?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22154&page=",
-     "saved": false
-    },
-    {
-     "chapter": "28",
-     "mangaID": "22071",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-28/chapter/22071?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22071&page=",
-     "saved": false
-    },
-    {
-     "chapter": "27",
-     "mangaID": "21178",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-27/chapter/21178?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21178&page=",
-     "saved": false
-    },
-    {
-     "chapter": "26",
-     "mangaID": "21975",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-26/chapter/21975?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21975&page=",
-     "saved": false
-    },
-    {
-     "chapter": "25",
-     "mangaID": "21953",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-25/chapter/21953?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21953&page=",
-     "saved": false
-    },
-    {
-     "chapter": "24",
-     "mangaID": "21933",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-24/chapter/21933?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21933&page=",
-     "saved": false
-    },
-    {
-     "chapter": "23",
-     "mangaID": "21932",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-23/chapter/21932?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21932&page=",
-     "saved": false
-    },
-    {
-     "chapter": "22",
-     "mangaID": "21877",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-22/chapter/21877?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21877&page=",
-     "saved": false
-    },
-    {
-     "chapter": "21",
-     "mangaID": "21840",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-21/chapter/21840?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21840&page=",
-     "saved": false
-    },
-    {
-     "chapter": "20",
-     "mangaID": "21807",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-20/chapter/21807?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21807&page=",
-     "saved": false
-    },
-    {
-     "chapter": "19",
-     "mangaID": "21741",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-19/chapter/21741?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21741&page=",
-     "saved": false
-    },
-    {
-     "chapter": "18",
-     "mangaID": "21714",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-18/chapter/21714?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21714&page=",
-     "saved": false
-    },
-    {
-     "chapter": "17",
-     "mangaID": "21664",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-17/chapter/21664?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21664&page=",
-     "saved": false
-    },
-    {
-     "chapter": "16",
-     "mangaID": "21610",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-16/chapter/21610?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21610&page=",
-     "saved": false
-    },
-    {
-     "chapter": "15",
-     "mangaID": "21598",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-15/chapter/21598?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21598&page=",
-     "saved": false
-    },
-    {
-     "chapter": "14",
-     "mangaID": "21562",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-14/chapter/21562?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21562&page=",
-     "saved": false
-    },
-    {
-     "chapter": "13",
-     "mangaID": "21561",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-13/chapter/21561?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21561&page=",
-     "saved": false
-    },
-    {
-     "chapter": "12",
-     "mangaID": "21538",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-12/chapter/21538?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21538&page=",
-     "saved": false
-    },
-    {
-     "chapter": "11",
-     "mangaID": "21514",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-11/chapter/21514?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21514&page=",
-     "saved": false
-    },
-    {
-     "chapter": "10",
-     "mangaID": "21485",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-10/chapter/21485?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21485&page=",
-     "saved": false
-    },
-    {
-     "chapter": "9",
-     "mangaID": "21466",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-9/chapter/21466?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21466&page=",
-     "saved": false
-    },
-    {
-     "chapter": "8",
-     "mangaID": "21421",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-8/chapter/21421?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21421&page=",
-     "saved": false
-    },
-    {
-     "chapter": "7",
-     "mangaID": "21399",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-7/chapter/21399?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21399&page=",
-     "saved": false
-    },
-    {
-     "chapter": "6",
-     "mangaID": "21364",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-6/chapter/21364?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21364&page=",
-     "saved": false
-    },
-    {
-     "chapter": "5",
-     "mangaID": "21314",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-5/chapter/21314?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21314&page=",
-     "saved": false
-    },
-    {
-     "chapter": "4",
-     "mangaID": "21288",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-4/chapter/21288?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21288&page=",
-     "saved": false
-    },
-    {
-     "chapter": "3",
-     "mangaID": "21280",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-3/chapter/21280?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21280&page=",
-     "saved": false
-    },
-    {
-     "chapter": "2",
-     "mangaID": "21279",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-2/chapter/21279?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21279&page=",
-     "saved": false
-    },
-    {
-     "chapter": "1",
-     "mangaID": "21278",
-     "dataURL": "https://www.viz.com/shonenjump/high-school-family-chapter-1/chapter/21278?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21278&page=",
-     "saved": false
-    }
-   ]
+   "chapters": []
   },
   {
    "title": "Magu-chan: God of Destruction",
    "vanityTitle": "magu-chan-god-of-destruction",
    "latestChapter": "53",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/717-th-062120_Thumbnail_400x320.jpg",
-   "chapters": [
-    {
-     "chapter": "53",
-     "mangaID": "22954",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-53/chapter/22954?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22954&page=",
-     "saved": false
-    },
-    {
-     "chapter": "52",
-     "mangaID": "22827",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-52/chapter/22827?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22827&page=",
-     "saved": false
-    },
-    {
-     "chapter": "51",
-     "mangaID": "22805",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-51/chapter/22805?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22805&page=",
-     "saved": false
-    },
-    {
-     "chapter": "50",
-     "mangaID": "22767",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-50/chapter/22767?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22767&page=",
-     "saved": false
-    },
-    {
-     "chapter": "49",
-     "mangaID": "22716",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-49/chapter/22716?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22716&page=",
-     "saved": false
-    },
-    {
-     "chapter": "48",
-     "mangaID": "22665",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-48/chapter/22665?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22665&page=",
-     "saved": false
-    },
-    {
-     "chapter": "47",
-     "mangaID": "22644",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-47/chapter/22644?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22644&page=",
-     "saved": false
-    },
-    {
-     "chapter": "46",
-     "mangaID": "22618",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-46/chapter/22618?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22618&page=",
-     "saved": false
-    },
-    {
-     "chapter": "45",
-     "mangaID": "22594",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-45/chapter/22594?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22594&page=",
-     "saved": false
-    },
-    {
-     "chapter": "44",
-     "mangaID": "22570",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-44/chapter/22570?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22570&page=",
-     "saved": false
-    },
-    {
-     "chapter": "43",
-     "mangaID": "22490",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-43/chapter/22490?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22490&page=",
-     "saved": false
-    },
-    {
-     "chapter": "42",
-     "mangaID": "22447",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-42/chapter/22447?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22447&page=",
-     "saved": false
-    },
-    {
-     "chapter": "41",
-     "mangaID": "22422",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-41/chapter/22422?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22422&page=",
-     "saved": false
-    },
-    {
-     "chapter": "40",
-     "mangaID": "22366",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-40/chapter/22366?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22366&page=",
-     "saved": false
-    },
-    {
-     "chapter": "39",
-     "mangaID": "22346",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-39/chapter/22346?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22346&page=",
-     "saved": false
-    },
-    {
-     "chapter": "38",
-     "mangaID": "22322",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-38/chapter/22322?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22322&page=",
-     "saved": false
-    },
-    {
-     "chapter": "37",
-     "mangaID": "22301",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-37/chapter/22301?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22301&page=",
-     "saved": false
-    },
-    {
-     "chapter": "36",
-     "mangaID": "22223",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-36/chapter/22223?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22223&page=",
-     "saved": false
-    },
-    {
-     "chapter": "35",
-     "mangaID": "22200",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-35/chapter/22200?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22200&page=",
-     "saved": false
-    },
-    {
-     "chapter": "34",
-     "mangaID": "22157",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-34/chapter/22157?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22157&page=",
-     "saved": false
-    },
-    {
-     "chapter": "33",
-     "mangaID": "22074",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-33/chapter/22074?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22074&page=",
-     "saved": false
-    },
-    {
-     "chapter": "32",
-     "mangaID": "21180",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-32/chapter/21180?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21180&page=",
-     "saved": false
-    },
-    {
-     "chapter": "31",
-     "mangaID": "21977",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-31/chapter/21977?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21977&page=",
-     "saved": false
-    },
-    {
-     "chapter": "30",
-     "mangaID": "21955",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-30/chapter/21955?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21955&page=",
-     "saved": false
-    },
-    {
-     "chapter": "29",
-     "mangaID": "21934",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-29/chapter/21934?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21934&page=",
-     "saved": false
-    },
-    {
-     "chapter": "28",
-     "mangaID": "21879",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-28/chapter/21879?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21879&page=",
-     "saved": false
-    },
-    {
-     "chapter": "27",
-     "mangaID": "21842",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-27/chapter/21842?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21842&page=",
-     "saved": false
-    },
-    {
-     "chapter": "26",
-     "mangaID": "21809",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-26/chapter/21809?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21809&page=",
-     "saved": false
-    },
-    {
-     "chapter": "25",
-     "mangaID": "21756",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-25/chapter/21756?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21756&page=",
-     "saved": false
-    },
-    {
-     "chapter": "24",
-     "mangaID": "21716",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-24/chapter/21716?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21716&page=",
-     "saved": false
-    },
-    {
-     "chapter": "23",
-     "mangaID": "21666",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-23/chapter/21666?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21666&page=",
-     "saved": false
-    },
-    {
-     "chapter": "22",
-     "mangaID": "21612",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-22/chapter/21612?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21612&page=",
-     "saved": false
-    },
-    {
-     "chapter": "21",
-     "mangaID": "21587",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-21/chapter/21587?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21587&page=",
-     "saved": false
-    },
-    {
-     "chapter": "20",
-     "mangaID": "21564",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-20/chapter/21564?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21564&page=",
-     "saved": false
-    },
-    {
-     "chapter": "19",
-     "mangaID": "21533",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-19/chapter/21533?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21533&page=",
-     "saved": false
-    },
-    {
-     "chapter": "18",
-     "mangaID": "21516",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-18/chapter/21516?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21516&page=",
-     "saved": false
-    },
-    {
-     "chapter": "17",
-     "mangaID": "21468",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-17/chapter/21468?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21468&page=",
-     "saved": false
-    },
-    {
-     "chapter": "16",
-     "mangaID": "21427",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-16/chapter/21427?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21427&page=",
-     "saved": false
-    },
-    {
-     "chapter": "15",
-     "mangaID": "21401",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-15/chapter/21401?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21401&page=",
-     "saved": false
-    },
-    {
-     "chapter": "14",
-     "mangaID": "21366",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-14/chapter/21366?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21366&page=",
-     "saved": false
-    },
-    {
-     "chapter": "13",
-     "mangaID": "21316",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-13/chapter/21316?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21316&page=",
-     "saved": false
-    },
-    {
-     "chapter": "12",
-     "mangaID": "21290",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-12/chapter/21290?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21290&page=",
-     "saved": false
-    },
-    {
-     "chapter": "11",
-     "mangaID": "21264",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-11/chapter/21264?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21264&page=",
-     "saved": false
-    },
-    {
-     "chapter": "10",
-     "mangaID": "21238",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-10/chapter/21238?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21238&page=",
-     "saved": false
-    },
-    {
-     "chapter": "9",
-     "mangaID": "21188",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-9/chapter/21188?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21188&page=",
-     "saved": false
-    },
-    {
-     "chapter": "8",
-     "mangaID": "21091",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-8/chapter/21091?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21091&page=",
-     "saved": false
-    },
-    {
-     "chapter": "7",
-     "mangaID": "21025",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-7/chapter/21025?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21025&page=",
-     "saved": false
-    },
-    {
-     "chapter": "6",
-     "mangaID": "20972",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-6/chapter/20972?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20972&page=",
-     "saved": false
-    },
-    {
-     "chapter": "5",
-     "mangaID": "20948",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-5/chapter/20948?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20948&page=",
-     "saved": false
-    },
-    {
-     "chapter": "4",
-     "mangaID": "20874",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-4/chapter/20874?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20874&page=",
-     "saved": false
-    },
-    {
-     "chapter": "3",
-     "mangaID": "20817",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-3/chapter/20817?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20817&page=",
-     "saved": false
-    },
-    {
-     "chapter": "2",
-     "mangaID": "20804",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-2/chapter/20804?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20804&page=",
-     "saved": false
-    },
-    {
-     "chapter": "1",
-     "mangaID": "20803",
-     "dataURL": "https://www.viz.com/shonenjump/magu-chan-god-of-destruction-chapter-1/chapter/20803?action=read",
-     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20803&page=",
-     "saved": false
-    }
-   ]
+   "chapters": []
   },
   {
    "title": "Me & Roboco",
@@ -15838,9 +15206,661 @@
   {
    "title": "Mission: Yozakura Family",
    "vanityTitle": "mission-yozakura-family",
-   "latestChapter": "91",
+   "latestChapter": "93",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/627-th-082519_Thumbnail_400x320_jpg",
-   "chapters": []
+   "chapters": [
+    {
+     "chapter": "93",
+     "mangaID": "23050",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-93/chapter/23050?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23050&page=",
+     "saved": false
+    },
+    {
+     "chapter": "92",
+     "mangaID": "22921",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-92/chapter/22921?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22921&page=",
+     "saved": false
+    },
+    {
+     "chapter": "91",
+     "mangaID": "22834",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-91/chapter/22834?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22834&page=",
+     "saved": false
+    },
+    {
+     "chapter": "90",
+     "mangaID": "22808",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-90/chapter/22808?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22808&page=",
+     "saved": false
+    },
+    {
+     "chapter": "89",
+     "mangaID": "22770",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-89/chapter/22770?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22770&page=",
+     "saved": false
+    },
+    {
+     "chapter": "88",
+     "mangaID": "22719",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-88/chapter/22719?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22719&page=",
+     "saved": false
+    },
+    {
+     "chapter": "87",
+     "mangaID": "22670",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-87/chapter/22670?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22670&page=",
+     "saved": false
+    },
+    {
+     "chapter": "86",
+     "mangaID": "22647",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-86/chapter/22647?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22647&page=",
+     "saved": false
+    },
+    {
+     "chapter": "85",
+     "mangaID": "22620",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-85/chapter/22620?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22620&page=",
+     "saved": false
+    },
+    {
+     "chapter": "84",
+     "mangaID": "22597",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-84/chapter/22597?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22597&page=",
+     "saved": false
+    },
+    {
+     "chapter": "83",
+     "mangaID": "22573",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-83/chapter/22573?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22573&page=",
+     "saved": false
+    },
+    {
+     "chapter": "82",
+     "mangaID": "22493",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-82/chapter/22493?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22493&page=",
+     "saved": false
+    },
+    {
+     "chapter": "81",
+     "mangaID": "22450",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-81/chapter/22450?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22450&page=",
+     "saved": false
+    },
+    {
+     "chapter": "80",
+     "mangaID": "22425",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-80/chapter/22425?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22425&page=",
+     "saved": false
+    },
+    {
+     "chapter": "79",
+     "mangaID": "22369",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-79/chapter/22369?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22369&page=",
+     "saved": false
+    },
+    {
+     "chapter": "78",
+     "mangaID": "22349",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-78/chapter/22349?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22349&page=",
+     "saved": false
+    },
+    {
+     "chapter": "77",
+     "mangaID": "22325",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-77/chapter/22325?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22325&page=",
+     "saved": false
+    },
+    {
+     "chapter": "76",
+     "mangaID": "22304",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-76/chapter/22304?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22304&page=",
+     "saved": false
+    },
+    {
+     "chapter": "75",
+     "mangaID": "22227",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-75/chapter/22227?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22227&page=",
+     "saved": false
+    },
+    {
+     "chapter": "74",
+     "mangaID": "22203",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-74/chapter/22203?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22203&page=",
+     "saved": false
+    },
+    {
+     "chapter": "73",
+     "mangaID": "22160",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-73/chapter/22160?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22160&page=",
+     "saved": false
+    },
+    {
+     "chapter": "72",
+     "mangaID": "22077",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-72/chapter/22077?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22077&page=",
+     "saved": false
+    },
+    {
+     "chapter": "71",
+     "mangaID": "21182",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-71/chapter/21182?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21182&page=",
+     "saved": false
+    },
+    {
+     "chapter": "70",
+     "mangaID": "21980",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-70/chapter/21980?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21980&page=",
+     "saved": false
+    },
+    {
+     "chapter": "69",
+     "mangaID": "21958",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-69/chapter/21958?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21958&page=",
+     "saved": false
+    },
+    {
+     "chapter": "68",
+     "mangaID": "21937",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-68/chapter/21937?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21937&page=",
+     "saved": false
+    },
+    {
+     "chapter": "67",
+     "mangaID": "21882",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-67/chapter/21882?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21882&page=",
+     "saved": false
+    },
+    {
+     "chapter": "66",
+     "mangaID": "21845",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-66/chapter/21845?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21845&page=",
+     "saved": false
+    },
+    {
+     "chapter": "65",
+     "mangaID": "21812",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-65/chapter/21812?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21812&page=",
+     "saved": false
+    },
+    {
+     "chapter": "64",
+     "mangaID": "21759",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-64/chapter/21759?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21759&page=",
+     "saved": false
+    },
+    {
+     "chapter": "63",
+     "mangaID": "21719",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-63/chapter/21719?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21719&page=",
+     "saved": false
+    },
+    {
+     "chapter": "62",
+     "mangaID": "21669",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-62/chapter/21669?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21669&page=",
+     "saved": false
+    },
+    {
+     "chapter": "61",
+     "mangaID": "21614",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-61/chapter/21614?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21614&page=",
+     "saved": false
+    },
+    {
+     "chapter": "60",
+     "mangaID": "21590",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-60/chapter/21590?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21590&page=",
+     "saved": false
+    },
+    {
+     "chapter": "59",
+     "mangaID": "21567",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-59/chapter/21567?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21567&page=",
+     "saved": false
+    },
+    {
+     "chapter": "58",
+     "mangaID": "21540",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-58/chapter/21540?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21540&page=",
+     "saved": false
+    },
+    {
+     "chapter": "57",
+     "mangaID": "21519",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-57/chapter/21519?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21519&page=",
+     "saved": false
+    },
+    {
+     "chapter": "56",
+     "mangaID": "21471",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-56/chapter/21471?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21471&page=",
+     "saved": false
+    },
+    {
+     "chapter": "55",
+     "mangaID": "21430",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-55/chapter/21430?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21430&page=",
+     "saved": false
+    },
+    {
+     "chapter": "54",
+     "mangaID": "21405",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-54/chapter/21405?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21405&page=",
+     "saved": false
+    },
+    {
+     "chapter": "53",
+     "mangaID": "21370",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-53/chapter/21370?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21370&page=",
+     "saved": false
+    },
+    {
+     "chapter": "52",
+     "mangaID": "21319",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-52/chapter/21319?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21319&page=",
+     "saved": false
+    },
+    {
+     "chapter": "51",
+     "mangaID": "21292",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-51/chapter/21292?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21292&page=",
+     "saved": false
+    },
+    {
+     "chapter": "50",
+     "mangaID": "21268",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-50/chapter/21268?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21268&page=",
+     "saved": false
+    },
+    {
+     "chapter": "49",
+     "mangaID": "21241",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-49/chapter/21241?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21241&page=",
+     "saved": false
+    },
+    {
+     "chapter": "48",
+     "mangaID": "21191",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-48/chapter/21191?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21191&page=",
+     "saved": false
+    },
+    {
+     "chapter": "47",
+     "mangaID": "21093",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-47/chapter/21093?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21093&page=",
+     "saved": false
+    },
+    {
+     "chapter": "46",
+     "mangaID": "21029",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-46/chapter/21029?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=21029&page=",
+     "saved": false
+    },
+    {
+     "chapter": "45",
+     "mangaID": "20975",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-45/chapter/20975?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20975&page=",
+     "saved": false
+    },
+    {
+     "chapter": "44",
+     "mangaID": "20951",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-44/chapter/20951?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20951&page=",
+     "saved": false
+    },
+    {
+     "chapter": "43",
+     "mangaID": "20878",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-43/chapter/20878?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20878&page=",
+     "saved": false
+    },
+    {
+     "chapter": "42",
+     "mangaID": "20819",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-42/chapter/20819?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20819&page=",
+     "saved": false
+    },
+    {
+     "chapter": "41",
+     "mangaID": "20795",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-41/chapter/20795?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20795&page=",
+     "saved": false
+    },
+    {
+     "chapter": "40",
+     "mangaID": "20756",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-40/chapter/20756?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20756&page=",
+     "saved": false
+    },
+    {
+     "chapter": "39",
+     "mangaID": "20728",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-39/chapter/20728?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20728&page=",
+     "saved": false
+    },
+    {
+     "chapter": "38",
+     "mangaID": "20675",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-38/chapter/20675?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20675&page=",
+     "saved": false
+    },
+    {
+     "chapter": "37",
+     "mangaID": "20652",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-37/chapter/20652?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20652&page=",
+     "saved": false
+    },
+    {
+     "chapter": "36",
+     "mangaID": "20601",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-36/chapter/20601?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20601&page=",
+     "saved": false
+    },
+    {
+     "chapter": "35",
+     "mangaID": "20580",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-35/chapter/20580?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20580&page=",
+     "saved": false
+    },
+    {
+     "chapter": "34",
+     "mangaID": "20474",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-34/chapter/20474?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20474&page=",
+     "saved": false
+    },
+    {
+     "chapter": "33",
+     "mangaID": "20418",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-33/chapter/20418?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20418&page=",
+     "saved": false
+    },
+    {
+     "chapter": "32",
+     "mangaID": "20346",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-32/chapter/20346?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20346&page=",
+     "saved": false
+    },
+    {
+     "chapter": "31",
+     "mangaID": "20287",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-31/chapter/20287?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20287&page=",
+     "saved": false
+    },
+    {
+     "chapter": "30",
+     "mangaID": "20261",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-30/chapter/20261?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20261&page=",
+     "saved": false
+    },
+    {
+     "chapter": "29",
+     "mangaID": "20240",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-29/chapter/20240?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20240&page=",
+     "saved": false
+    },
+    {
+     "chapter": "28",
+     "mangaID": "20217",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-28/chapter/20217?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20217&page=",
+     "saved": false
+    },
+    {
+     "chapter": "27",
+     "mangaID": "20157",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-27/chapter/20157?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20157&page=",
+     "saved": false
+    },
+    {
+     "chapter": "26",
+     "mangaID": "20109",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-26/chapter/20109?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20109&page=",
+     "saved": false
+    },
+    {
+     "chapter": "25",
+     "mangaID": "20086",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-25/chapter/20086?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20086&page=",
+     "saved": false
+    },
+    {
+     "chapter": "24",
+     "mangaID": "20004",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-24/chapter/20004?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=20004&page=",
+     "saved": false
+    },
+    {
+     "chapter": "23",
+     "mangaID": "19966",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-23/chapter/19966?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19966&page=",
+     "saved": false
+    },
+    {
+     "chapter": "22",
+     "mangaID": "19912",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-22/chapter/19912?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19912&page=",
+     "saved": false
+    },
+    {
+     "chapter": "21",
+     "mangaID": "19891",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-21/chapter/19891?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19891&page=",
+     "saved": false
+    },
+    {
+     "chapter": "20",
+     "mangaID": "19847",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-20/chapter/19847?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19847&page=",
+     "saved": false
+    },
+    {
+     "chapter": "19",
+     "mangaID": "19818",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-19/chapter/19818?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19818&page=",
+     "saved": false
+    },
+    {
+     "chapter": "18",
+     "mangaID": "19777",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-18/chapter/19777?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19777&page=",
+     "saved": false
+    },
+    {
+     "chapter": "17",
+     "mangaID": "19756",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-17/chapter/19756?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19756&page=",
+     "saved": false
+    },
+    {
+     "chapter": "16",
+     "mangaID": "19691",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-16/chapter/19691?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19691&page=",
+     "saved": false
+    },
+    {
+     "chapter": "15",
+     "mangaID": "19661",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-15/chapter/19661?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19661&page=",
+     "saved": false
+    },
+    {
+     "chapter": "14",
+     "mangaID": "19632",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-14/chapter/19632?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19632&page=",
+     "saved": false
+    },
+    {
+     "chapter": "13",
+     "mangaID": "19564",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-13/chapter/19564?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19564&page=",
+     "saved": false
+    },
+    {
+     "chapter": "12",
+     "mangaID": "19505",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-12/chapter/19505?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19505&page=",
+     "saved": false
+    },
+    {
+     "chapter": "11",
+     "mangaID": "19445",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-11/chapter/19445?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19445&page=",
+     "saved": false
+    },
+    {
+     "chapter": "10",
+     "mangaID": "19422",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-10/chapter/19422?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19422&page=",
+     "saved": false
+    },
+    {
+     "chapter": "9",
+     "mangaID": "19400",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-9/chapter/19400?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19400&page=",
+     "saved": false
+    },
+    {
+     "chapter": "8",
+     "mangaID": "19330",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-8/chapter/19330?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19330&page=",
+     "saved": false
+    },
+    {
+     "chapter": "7",
+     "mangaID": "19286",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-7/chapter/19286?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19286&page=",
+     "saved": false
+    },
+    {
+     "chapter": "6",
+     "mangaID": "19242",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-6/chapter/19242?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19242&page=",
+     "saved": false
+    },
+    {
+     "chapter": "5",
+     "mangaID": "19222",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-5/chapter/19222?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19222&page=",
+     "saved": false
+    },
+    {
+     "chapter": "4",
+     "mangaID": "19199",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-4/chapter/19199?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19199&page=",
+     "saved": false
+    },
+    {
+     "chapter": "3",
+     "mangaID": "19147",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-3/chapter/19147?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19147&page=",
+     "saved": false
+    },
+    {
+     "chapter": "2",
+     "mangaID": "19086",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-2/chapter/19086?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19086&page=",
+     "saved": false
+    },
+    {
+     "chapter": "1",
+     "mangaID": "19070",
+     "dataURL": "https://www.viz.com/shonenjump/mission-yozakura-family-chapter-1/chapter/19070?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=19070&page=",
+     "saved": false
+    }
+   ]
   },
   {
    "title": "Neru: Way of the Martial Artist",
@@ -15896,16 +15916,66 @@
   {
    "title": "Choujin X",
    "vanityTitle": "choujin-x",
-   "latestChapter": "4",
+   "latestChapter": "6",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/763-th-0_aSimul_Color_Thumbnail_400x320thisone.jpg",
-   "chapters": []
+   "chapters": [
+    {
+     "chapter": "6",
+     "mangaID": "23111",
+     "dataURL": "https://www.viz.com/shonenjump/choujin-x-chapter-6/chapter/23111?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23111&page=",
+     "saved": false
+    },
+    {
+     "chapter": "5",
+     "mangaID": "23059",
+     "dataURL": "https://www.viz.com/shonenjump/choujin-x-chapter-5/chapter/23059?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23059&page=",
+     "saved": false
+    },
+    {
+     "chapter": "4",
+     "mangaID": "23036",
+     "dataURL": "https://www.viz.com/shonenjump/choujin-x-chapter-4/chapter/23036?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23036&page=",
+     "saved": false
+    },
+    {
+     "chapter": "3",
+     "mangaID": "22790",
+     "dataURL": "https://www.viz.com/shonenjump/choujin-x-chapter-3/chapter/22790?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22790&page=",
+     "saved": false
+    },
+    {
+     "chapter": "2",
+     "mangaID": "22780",
+     "dataURL": "https://www.viz.com/shonenjump/choujin-x-chapter-2/chapter/22780?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22780&page=",
+     "saved": false
+    },
+    {
+     "chapter": "1",
+     "mangaID": "22511",
+     "dataURL": "https://www.viz.com/shonenjump/choujin-x-chapter-1/chapter/22511?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=22511&page=",
+     "saved": false
+    }
+   ]
   },
   {
    "title": "GHOST REAPER GIRL",
    "vanityTitle": "ghost-reaper-girl",
-   "latestChapter": "24",
+   "latestChapter": "25",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/722-th-071220_Thumbnail_GhostGirl_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "25",
+     "mangaID": "23035",
+     "dataURL": "https://www.viz.com/shonenjump/ghost-reaper-girl-chapter-25/chapter/23035?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23035&page=",
+     "saved": false
+    },
     {
      "chapter": "24",
      "mangaID": "22865",
@@ -25067,9 +25137,16 @@
   {
    "title": "Jujutsu Kaisen",
    "vanityTitle": "jujutsu-kaisen",
-   "latestChapter": "153",
+   "latestChapter": "154",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/540-th-WSJ_JuJutsuKaisen_400x320.jpg",
    "chapters": [
+    {
+     "chapter": "154",
+     "mangaID": "23046",
+     "dataURL": "https://www.viz.com/shonenjump/jujutsu-kaisen-chapter-154/chapter/23046?action=read",
+     "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=23046&page=",
+     "saved": false
+    },
     {
      "chapter": "153",
      "mangaID": "22664",

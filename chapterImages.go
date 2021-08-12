@@ -11,17 +11,19 @@ import (
 	"sync"
 
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
+	"github.com/rwcarlsen/goexif/exif"
+	"github.com/rwcarlsen/goexif/mknote"
 )
 
 var cookie string
 
 type imageData struct {
 	URL  string
-	Page string
+	Page int
 }
 
 func fetchChapter(specifiedSeries string, specifiedChapter string) int {
-
+	exif.RegisterParsers(mknote.All...)
 	database := loadManga("manga_full.json")
 	selectedSeries := findManga(&database, specifiedSeries)
 	selectedChapter, pos := findChapterAndPosition(&selectedSeries.Chapters, specifiedChapter)
@@ -44,15 +46,34 @@ func fetchChapter(specifiedSeries string, specifiedChapter string) int {
 
 func fetchImages(client *http.Client, selectedSeries *Series, selectedChapter *Chapter, pageCount int) {
 	linkChan := make(chan imageData, pageCount+1)
+	keyStorage := make([]string, pageCount+1)
 
 	var wg sync.WaitGroup
 	for i := 0; i <= pageCount; i++ {
 		wg.Add(1)
 		go fetchImageLink(client, selectedChapter, i, linkChan)
-		go fetchPage(client, linkChan, &wg, selectedSeries, selectedChapter)
+		go fetchPage(client, linkChan, &wg, selectedSeries, selectedChapter, &keyStorage)
 	}
 	wg.Wait()
 	close(linkChan)
+
+	keys := Keys{
+		Keys: keyStorage,
+	}
+
+	key := fmt.Sprintf("Series/%s/%s/%s", selectedSeries.VanityTitle, selectedChapter.Chapter, selectedChapter.Chapter+".json")
+	test2 := bytes.NewReader(toJSON(keys))
+	upParams := &s3manager.UploadInput{
+		Bucket: &bucket,
+		Key:    &key,
+		Body:   test2,
+	}
+
+	result, uploaderr := uploader.Upload(upParams)
+	if uploaderr != nil {
+		log.Fatal(uploaderr)
+	}
+	fmt.Println(result)
 }
 
 func fetchImageLink(client *http.Client, selectedChapter *Chapter, page int, buffer chan imageData) {
@@ -73,7 +94,7 @@ func fetchImageLink(client *http.Client, selectedChapter *Chapter, page int, buf
 
 	if imageLinkResponse.StatusCode == http.StatusOK {
 		responseBytes, _ := ioutil.ReadAll(imageLinkResponse.Body)
-		buffer <- imageData{URL: string(responseBytes), Page: strconv.Itoa(page)}
+		buffer <- imageData{URL: string(responseBytes), Page: page}
 	}
 }
 
@@ -93,7 +114,7 @@ func fetchPageCount(client *http.Client, currentChapter *Chapter) int {
 	return count
 }
 
-func fetchPage(client *http.Client, linkChan chan imageData, wg *sync.WaitGroup, selectedSeries *Series, selectedChapter *Chapter) {
+func fetchPage(client *http.Client, linkChan chan imageData, wg *sync.WaitGroup, selectedSeries *Series, selectedChapter *Chapter, keyStorage *[]string) {
 	req := <-linkChan
 	url := req.URL
 	page := req.Page
@@ -116,8 +137,14 @@ func fetchPage(client *http.Client, linkChan chan imageData, wg *sync.WaitGroup,
 			log.Fatal(imageErr)
 		}
 
-		key := fmt.Sprintf("Series/%s/%s/%s", selectedSeries.VanityTitle, selectedChapter.Chapter, page+".jpg")
+		key := fmt.Sprintf("Series/%s/%s/%s", selectedSeries.VanityTitle, selectedChapter.Chapter, strconv.Itoa(page)+".jpg")
 		test2 := bytes.NewReader(imageBytes)
+
+		tags, _ := exif.Decode(test2)
+		decodekey, _ := tags.Get(exif.ImageUniqueID)
+		decodestring, _ := decodekey.StringVal()
+		(*keyStorage)[page] = decodestring
+
 		upParams := &s3manager.UploadInput{
 			Bucket: &bucket,
 			Key:    &key,

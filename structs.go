@@ -23,3 +23,7 @@ type Chapter struct {
 type ImageLinks struct {
 	Links []string `json:"links"`
 }
+
+type Keys struct {
+	Keys []string `json:"keys"`
+}
