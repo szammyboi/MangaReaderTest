@@ -78,18 +78,19 @@ async function loadChapter() {
                         });
                         $("#imgcontainer").append(img)
 
-                        $('#imgcontainer').imagesLoaded(function () {
-                            console.log("Images Loaded");
-                            displayToCanvas();
-                        });
+                        
+                    }
+                    $('#imgcontainer').imagesLoaded(function () {
+                        console.log("Images Loaded");
+                        displayToCanvas();
+                    });
 
 
-                        if (currentChapterIndex + 1 < chapterOptions.length) {
-                            sideLoadChapter(currentChapterIndex + 1);
-                        }
-                        if (currentChapterIndex - 1 >= 0) {
-                            sideLoadChapter(currentChapterIndex - 1);
-                        }
+                    if (currentChapterIndex + 1 < chapterOptions.length) {
+                        sideLoadChapter(currentChapterIndex + 1);
+                    }
+                    if (currentChapterIndex - 1 >= 0) {
+                        sideLoadChapter(currentChapterIndex - 1);
                     }
                 })
         })
