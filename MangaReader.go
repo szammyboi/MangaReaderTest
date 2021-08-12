@@ -78,7 +78,7 @@ func getChapter(w http.ResponseWriter, r *http.Request) {
 	chapterSize := fetchChapter(series, chapter)
 	alllinks := ImageLinks{}
 	baseURL := fmt.Sprintf("https://dwmc7ixdnoavh.cloudfront.net/Series/%s/%s/", series, chapter)
-	for i := 0; i < chapterSize; i++ {
+	for i := 0; i <= chapterSize; i++ {
 		alllinks.Links = append(alllinks.Links, fmt.Sprintf(baseURL+"%d.jpg", i))
 	}
 
