@@ -107,35 +107,32 @@ function displayToCanvas() {
     leftImage = document.getElementById("" + (currentPage + 1));
 
     console.log(currentPage);
-    drawPage(rightImage, rightCtx);
-    drawPage(leftImage, leftCtx);
+    drawPage(rightImage, rightCtx, currentPages[currentPage].key);
+    drawPage(leftImage, leftCtx, currentPages[currentPage+1].key);
 }
 
 
-function drawPage(image, ctx) {
+function drawPage(image, ctx, key) {
     _ = parseInt(image.naturalWidth - 90);
     v = parseInt(image.naturalHeight - 140);
 
     ctx.canvas.width = _;
     ctx.canvas.height = v;
 
-    EXIF.getData(image, function () {
-        key = EXIF.getTag(this, "ImageUniqueID");
-        P = key.split(":");
+    P = key.split(":");
 
-        w = Math.floor(_ / 10);
-        b = Math.floor(v / 15);
+    w = Math.floor(_ / 10);
+    b = Math.floor(v / 15);
 
-        ctx.clearRect(0, 0, _, v);
+    ctx.clearRect(0, 0, _, v);
 
-        for (ctx.drawImage(image, 0, 0, _, b, 0, 0, _, b),
-            ctx.drawImage(image, 0, b + 10, w, v - 2 * b, 0, b, w, v - 2 * b),
-            ctx.drawImage(image, 0, 14 * (b + 10), _, image.height - 14 * (b + 10), 0, 14 * b, _, image.height - 14 * (b + 10)),
-            ctx.drawImage(image, 9 * (w + 10), b + 10, w + (_ - 10 * w), v - 2 * b, 9 * w, b, w + (_ - 10 * w), v - 2 * b),
-            m = 0; m < P.length; m++)
-            P[m] = parseInt(P[m], 16),
-            ctx.drawImage(image, Math.floor((m % 8 + 1) * (w + 10)), Math.floor((Math.floor(m / 8) + 1) * (b + 10)), Math.floor(w), Math.floor(b), Math.floor((P[m] % 8 + 1) * w), Math.floor((Math.floor(P[m] / 8) + 1) * b), Math.floor(w), Math.floor(b));
-    });
+    for (ctx.drawImage(image, 0, 0, _, b, 0, 0, _, b),
+        ctx.drawImage(image, 0, b + 10, w, v - 2 * b, 0, b, w, v - 2 * b),
+        ctx.drawImage(image, 0, 14 * (b + 10), _, image.height - 14 * (b + 10), 0, 14 * b, _, image.height - 14 * (b + 10)),
+        ctx.drawImage(image, 9 * (w + 10), b + 10, w + (_ - 10 * w), v - 2 * b, 9 * w, b, w + (_ - 10 * w), v - 2 * b),
+        m = 0; m < P.length; m++)
+        P[m] = parseInt(P[m], 16),
+        ctx.drawImage(image, Math.floor((m % 8 + 1) * (w + 10)), Math.floor((Math.floor(m / 8) + 1) * (b + 10)), Math.floor(w), Math.floor(b), Math.floor((P[m] % 8 + 1) * w), Math.floor((Math.floor(P[m] / 8) + 1) * b), Math.floor(w), Math.floor(b));
 }
 
 function selectChapter() {
