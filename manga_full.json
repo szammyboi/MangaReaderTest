@@ -7137,21 +7137,21 @@
      "mangaID": "5092",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-3/chapter/5092?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=5092&page=",
-     "saved": true
+     "saved": false
     },
     {
      "chapter": "2",
      "mangaID": "5091",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-2/chapter/5091?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=5091&page=",
-     "saved": true
+     "saved": false
     },
     {
      "chapter": "1",
      "mangaID": "5090",
      "dataURL": "https://www.viz.com/shonenjump/one-piece-chapter-1/chapter/5090?action=read",
      "imageURL": "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=5090&page=",
-     "saved": true
+     "saved": false
     }
    ]
   },
