@@ -60,46 +60,51 @@ async function loadChapter() {
         .get('https://www.chemistry-tutor.com/getChapter/' + series + '/' + chapterTitle)
         .then(response => {
             pageLinks = response.data.links;
-            for (i = 0; i < pageLinks.length; i++) {
-                currentPages.push({
-                    url: pageLinks[i],
-                    id: i
+
+            axios
+                .get('https://dwmc7ixdnoavh.cloudfront.net/Series/' + +series + '/' + chapterTitle + '/' + chapterTitle + '.json')
+                .then(keyresponse => {
+                    keys = keyresponse.data.keys
+                    for (i = 0; i < pageLinks.length; i++) {
+                        currentPages.push({
+                            id: i,
+                            url: pageLinks[i],
+                            key: keys[i]
+                        })
+
+                        var img = $('<img />', {
+                            id: i,
+                            src: pageLinks[i],
+                        });
+                        $("#imgcontainer").append(img)
+
+                        $('#imgcontainer').imagesLoaded(function () {
+                            console.log("Images Loaded");
+                            displayToCanvas();
+                        });
+
+
+                        if (currentChapterIndex + 1 < chapterOptions.length) {
+                            sideLoadChapter(currentChapterIndex + 1);
+                        }
+                        if (currentChapterIndex - 1 >= 0) {
+                            sideLoadChapter(currentChapterIndex - 1);
+                        }
+                    }
                 })
-                
-                var img = $('<img />', { 
-                    id: i,
-                    src: pageLinks[i],
-                  });
-                $("#imgcontainer").append(img)
-            }
-
-            $('#imgcontainer').imagesLoaded( function() {
-                console.log("Images Loaded");
-                displayToCanvas();
-              });
-            
-            
-            if (currentChapterIndex + 1 < chapterOptions.length) {
-                sideLoadChapter(currentChapterIndex + 1);
-            }
-            if (currentChapterIndex - 1 >= 0) {
-                sideLoadChapter(currentChapterIndex - 1);
-            }
-
-
         })
 }
 
 
 
 
-  
+
 function displayToCanvas() {
     leftCtx = document.getElementById("left").getContext("2d");
     rightCtx = document.getElementById("right").getContext("2d");
 
     rightImage = document.getElementById("" + currentPage);
-    leftImage = document.getElementById("" + (currentPage+1));
+    leftImage = document.getElementById("" + (currentPage + 1));
 
     console.log(currentPage);
     drawPage(rightImage, rightCtx);
