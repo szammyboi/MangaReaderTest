@@ -62,7 +62,7 @@ async function loadChapter() {
             pageLinks = response.data.links;
 
             axios
-                .get('https://dwmc7ixdnoavh.cloudfront.net/Series/' + +series + '/' + chapterTitle + '/' + chapterTitle + '.json')
+                .get('https://dwmc7ixdnoavh.cloudfront.net/Series/' + series + '/' + chapterTitle + '/' + chapterTitle + '.json')
                 .then(keyresponse => {
                     keys = keyresponse.data.keys
                     for (i = 0; i < pageLinks.length; i++) {
