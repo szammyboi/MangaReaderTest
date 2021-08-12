@@ -1,6 +1,160 @@
 {
  "manga": [
   {
+   "title": "Choujin X",
+   "vanityTitle": "choujin-x",
+   "latestChapter": "5",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/763-th-0_aSimul_Color_Thumbnail_400x320thisone.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Dr. STONE",
+   "vanityTitle": "dr-stone",
+   "latestChapter": "206",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1696-WSJ_DrStone_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Bleach: Special One-Shot",
+   "vanityTitle": "bleach-special-one-shot",
+   "latestChapter": "One-Shot",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/794-th-BLE_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "One Piece",
+   "vanityTitle": "one-piece",
+   "latestChapter": "1021",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/526-SeriesThumb_OP_400x320.png",
+   "chapters": []
+  },
+  {
+   "title": "Jujutsu Kaisen",
+   "vanityTitle": "jujutsu-kaisen",
+   "latestChapter": "154",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/540-th-WSJ_JuJutsuKaisen_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "My Hero Academia",
+   "vanityTitle": "my-hero-academia",
+   "latestChapter": "322",
+   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/371-SeriesThumbnails_MHA__400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Undead Unluck",
+   "vanityTitle": "undead-unluck",
+   "latestChapter": "74",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/693-th-011920_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Mashle: Magic and Muscles",
+   "vanityTitle": "mashle",
+   "latestChapter": "73",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/694-th-012620_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "The Elusive Samurai",
+   "vanityTitle": "the-elusive-samurai",
+   "latestChapter": "27",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/750-th-WSJ2021_issue08_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Black Clover",
+   "vanityTitle": "black-clover",
+   "latestChapter": "302",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/448-th-SeriesThumbnailsManga_BLC_chapter_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Sakamoto Days",
+   "vanityTitle": "sakamoto-days",
+   "latestChapter": "34",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/739-th-112220_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Mission: Yozakura Family",
+   "vanityTitle": "mission-yozakura-family",
+   "latestChapter": "93",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/627-th-082519_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Ayakashi Triangle",
+   "vanityTitle": "ayakashi-triangle",
+   "latestChapter": "55",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/716-th-061420_Thumbnail_400x320_jpg",
+   "chapters": []
+  },
+  {
+   "title": "Blue Box",
+   "vanityTitle": "blue-box",
+   "latestChapter": "16",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/757-th-WSJ2021_issue19_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Candy Flurry",
+   "vanityTitle": "candy-flurry",
+   "latestChapter": "15",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/762-th-WSJ2021_issue20_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "GHOST REAPER GIRL",
+   "vanityTitle": "ghost-reaper-girl",
+   "latestChapter": "25",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/722-th-071220_Thumbnail_GhostGirl_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "High School Family: Kokosei Kazoku",
+   "vanityTitle": "high-school-family",
+   "latestChapter": "49",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/733-th-090620_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Magu-chan: God of Destruction",
+   "vanityTitle": "magu-chan-god-of-destruction",
+   "latestChapter": "54",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/717-th-062120_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Me & Roboco",
+   "vanityTitle": "me-and-roboco",
+   "latestChapter": "52",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/721-th-070520_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "Neru: Way of the Martial Artist",
+   "vanityTitle": "neru-way-of-the-martial-artist",
+   "latestChapter": "5",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/790-th-WSJ2021_issue31_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "The Hunters Guild: Red Hood",
+   "vanityTitle": "the-hunters-guild-red-hood",
+   "latestChapter": "6",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/781-th-WSJ2021_issue30_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
+   "title": "WITCH WATCH",
+   "vanityTitle": "witch-watch",
+   "latestChapter": "25",
+   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/753-th-WSJ2021_issue10_Thumbnail_400x320.jpg",
+   "chapters": []
+  },
+  {
    "title": "Spy x Family",
    "vanityTitle": "spy-x-family",
    "latestChapter": "51",
@@ -36,27 +190,6 @@
    "chapters": []
   },
   {
-   "title": "My Hero Academia",
-   "vanityTitle": "my-hero-academia",
-   "latestChapter": "321",
-   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/371-SeriesThumbnails_MHA__400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Jujutsu Kaisen",
-   "vanityTitle": "jujutsu-kaisen",
-   "latestChapter": "153",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/540-th-WSJ_JuJutsuKaisen_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "One Piece",
-   "vanityTitle": "one-piece",
-   "latestChapter": "1020",
-   "thumbnail": "https://dw9to29mmj727.cloudfront.net/properties/2016/526-SeriesThumb_OP_400x320.png",
-   "chapters": []
-  },
-  {
    "title": "DC3",
    "vanityTitle": "dc3",
    "latestChapter": "Special One-Shot",
@@ -71,129 +204,10 @@
    "chapters": []
   },
   {
-   "title": "Neru: Way of the Martial Artist",
-   "vanityTitle": "neru-way-of-the-martial-artist",
-   "latestChapter": "4",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/790-th-WSJ2021_issue31_Thumbnail_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Mashle: Magic and Muscles",
-   "vanityTitle": "mashle",
-   "latestChapter": "72",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/694-th-012620_Thumbnail_400x320_jpg",
-   "chapters": []
-  },
-  {
-   "title": "Undead Unluck",
-   "vanityTitle": "undead-unluck",
-   "latestChapter": "73",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/693-th-011920_Thumbnail_400x320_jpg",
-   "chapters": []
-  },
-  {
-   "title": "Blue Box",
-   "vanityTitle": "blue-box",
-   "latestChapter": "15",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/757-th-WSJ2021_issue19_Thumbnail_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Sakamoto Days",
-   "vanityTitle": "sakamoto-days",
-   "latestChapter": "33",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/739-th-112220_Thumbnail_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "The Hunters Guild: Red Hood",
-   "vanityTitle": "the-hunters-guild-red-hood",
-   "latestChapter": "5",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/781-th-WSJ2021_issue30_Thumbnail_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Ayakashi Triangle",
-   "vanityTitle": "ayakashi-triangle",
-   "latestChapter": "54",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/716-th-061420_Thumbnail_400x320_jpg",
-   "chapters": []
-  },
-  {
-   "title": "Black Clover",
-   "vanityTitle": "black-clover",
-   "latestChapter": "301",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/448-th-SeriesThumbnailsManga_BLC_chapter_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Candy Flurry",
-   "vanityTitle": "candy-flurry",
-   "latestChapter": "14",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/762-th-WSJ2021_issue20_Thumbnail_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "High School Family: Kokosei Kazoku",
-   "vanityTitle": "high-school-family",
-   "latestChapter": "48",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/733-th-090620_Thumbnail_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Magu-chan: God of Destruction",
-   "vanityTitle": "magu-chan-god-of-destruction",
-   "latestChapter": "53",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/717-th-062120_Thumbnail_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Me & Roboco",
-   "vanityTitle": "me-and-roboco",
-   "latestChapter": "51",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/721-th-070520_Thumbnail_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Mission: Yozakura Family",
-   "vanityTitle": "mission-yozakura-family",
-   "latestChapter": "92",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/627-th-082519_Thumbnail_400x320_jpg",
-   "chapters": []
-  },
-  {
-   "title": "The Elusive Samurai",
-   "vanityTitle": "the-elusive-samurai",
-   "latestChapter": "26",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/750-th-WSJ2021_issue08_Thumbnail_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "WITCH WATCH",
-   "vanityTitle": "witch-watch",
-   "latestChapter": "24",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/753-th-WSJ2021_issue10_Thumbnail_400x320.jpg",
-   "chapters": []
-  },
-  {
-   "title": "Choujin X",
-   "vanityTitle": "choujin-x",
-   "latestChapter": "5",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/763-th-0_aSimul_Color_Thumbnail_400x320thisone.jpg",
-   "chapters": []
-  },
-  {
    "title": "One-Punch Man",
    "vanityTitle": "one-punch-man",
    "latestChapter": "147",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/249-th-327-SeriesThumbnailsManga_OPM_400x320-1.jpg",
-   "chapters": []
-  },
-  {
-   "title": "GHOST REAPER GIRL",
-   "vanityTitle": "ghost-reaper-girl",
-   "latestChapter": "24",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/722-th-071220_Thumbnail_GhostGirl_400x320.jpg",
    "chapters": []
   },
   {
@@ -229,13 +243,6 @@
    "vanityTitle": "shokugeki-no-sanji",
    "latestChapter": "3",
    "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/647-th-101319_shokugekinosanji_Thumbnail_400x320_jpg",
-   "chapters": []
-  },
-  {
-   "title": "Dr. STONE",
-   "vanityTitle": "dr-stone",
-   "latestChapter": "205",
-   "thumbnail": "https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_link_img/1696-WSJ_DrStone_400x320.jpg",
    "chapters": []
   },
   {

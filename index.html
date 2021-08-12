@@ -187,7 +187,7 @@
         <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
         <script>
             var json
-            $.ajax("http://www.chemistry-tutor.com/update", {
+            $.ajax("https://www.chemistry-tutor.com/update", {
                 success: function (data) {
                     json = data
                     gotJSON()
@@ -201,8 +201,8 @@
                 for (i = 0; i < json.manga.length; i++) {
     
                     var cardLink = $("<a>", {
-                        //href: "http://localhost:3000/reader/" + json.manga[i].vanityTitle + "/1",
-                        href: "http://www.chemistry-tutor.com/reader/" + json.manga[i].vanityTitle,
+                        //href: "https://localhost:3000/reader/" + json.manga[i].vanityTitle + "/1",
+                        href: "https://www.chemistry-tutor.com/reader/" + json.manga[i].vanityTitle,
                         id: json.manga[i].vanityTitle
                     });
                     var newDiv = $("<div>", {
