@@ -7,7 +7,7 @@ var pageURL = window.location.href;
 
 var drawerStatus = true;
 
-var series = window.location.href.substring(("https://www.chemistry-tutor.com/reader/".length))
+var series = window.location.href.substring(("https://mangatesting.herokuapp.com/reader/".length))
 var seriesDisplay;
 
 $(document).ready(function () {
@@ -35,7 +35,7 @@ $('#chapter-select').keypress(function (event) {
 
 async function loadChapterOptions() {
     await axios
-        .get('https://www.chemistry-tutor.com/json/' + series)
+        .get('https://mangatesting.herokuapp.com/json/' + series)
         .then(response => {
             chapters = response.data.chapters;
             seriesDisplay = response.data.title;
@@ -57,7 +57,7 @@ async function loadChapter() {
     console.log("loading...")
     chapterTitle = currentChapterName.toString().replace(".", '-')
     axios
-        .get('https://www.chemistry-tutor.com/getChapter/' + series + '/' + chapterTitle)
+        .get('https://mangatesting.herokuapp.com/getChapter/' + series + '/' + chapterTitle)
         .then(response => {
             pageLinks = response.data.links;
 
@@ -264,7 +264,7 @@ document.getElementById('canvases').onclick = function clickEvent(e) {
 function sideLoadChapter(i) {
     chapter = chapterOptions[i]
     axios
-        .get('https://www.chemistry-tutor.com/getChapter/' + series + '/' + chapter)
+        .get('https://mangatesting.herokuapp.com/getChapter/' + series + '/' + chapter)
         .then(response => {
             console.log("Side Chapter Loaded: " + chapter)
         })
