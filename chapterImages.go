@@ -46,7 +46,7 @@ func fetchChapter(specifiedSeries string, specifiedChapter string) int {
 
 func fetchImages(client *http.Client, selectedSeries *Series, selectedChapter *Chapter, pageCount int) {
 	linkChan := make(chan imageData, pageCount+1)
-	keyStorage := make([]string, pageCount+1)
+	keyStorage := make([]ChapterInfoNode, pageCount+1)
 
 	var wg sync.WaitGroup
 	for i := 0; i <= pageCount; i++ {
@@ -57,8 +57,8 @@ func fetchImages(client *http.Client, selectedSeries *Series, selectedChapter *C
 	wg.Wait()
 	close(linkChan)
 
-	keys := Keys{
-		Keys: keyStorage,
+	keys := ChapterInfo{
+		Info: keyStorage,
 	}
 
 	key := fmt.Sprintf("Series/%s/%s/%s", selectedSeries.VanityTitle, selectedChapter.Chapter, selectedChapter.Chapter+".json")
@@ -114,7 +114,7 @@ func fetchPageCount(client *http.Client, currentChapter *Chapter) int {
 	return count
 }
 
-func fetchPage(client *http.Client, linkChan chan imageData, wg *sync.WaitGroup, selectedSeries *Series, selectedChapter *Chapter, keyStorage *[]string) {
+func fetchPage(client *http.Client, linkChan chan imageData, wg *sync.WaitGroup, selectedSeries *Series, selectedChapter *Chapter, keyStorage *[]ChapterInfoNode) {
 	req := <-linkChan
 	url := req.URL
 	page := req.Page
@@ -138,17 +138,19 @@ func fetchPage(client *http.Client, linkChan chan imageData, wg *sync.WaitGroup,
 		}
 
 		key := fmt.Sprintf("Series/%s/%s/%s", selectedSeries.VanityTitle, selectedChapter.Chapter, strconv.Itoa(page)+".jpg")
-		test2 := bytes.NewReader(imageBytes)
+		keyReader := bytes.NewReader(imageBytes)
+		uploadReader := bytes.NewReader(imageBytes)
 
-		tags, _ := exif.Decode(test2)
+		tags, _ := exif.Decode(keyReader)
 		decodekey, _ := tags.Get(exif.ImageUniqueID)
 		decodestring, _ := decodekey.StringVal()
-		(*keyStorage)[page] = decodestring
+		imageURL := fmt.Sprintf("https://dwmc7ixdnoavh.cloudfront.net/Series/%s/%s/%s", selectedSeries.VanityTitle, selectedChapter.Chapter, strconv.Itoa(page)+".jpg")
+		(*keyStorage)[page] = ChapterInfoNode{decodestring, imageURL}
 
 		upParams := &s3manager.UploadInput{
 			Bucket: &bucket,
 			Key:    &key,
-			Body:   test2,
+			Body:   uploadReader,
 		}
 
 		result, uploaderr := uploader.Upload(upParams)

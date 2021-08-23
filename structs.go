@@ -24,6 +24,11 @@ type ImageLinks struct {
 	Links []string `json:"links"`
 }
 
-type Keys struct {
-	Keys []string `json:"keys"`
+type ChapterInfo struct {
+	Info []ChapterInfoNode `json:"info"`
+}
+
+type ChapterInfoNode struct {
+	URL string `json:"url"`
+	Key string `json:"key"`
 }
