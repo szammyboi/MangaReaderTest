@@ -22,7 +22,7 @@ type imageData struct {
 	Page int
 }
 
-func fetchChapter(specifiedSeries string, specifiedChapter string) int {
+func fetchChapter(specifiedSeries string, specifiedChapter string) {
 	exif.RegisterParsers(mknote.All...)
 	database := loadManga("manga_full.json")
 	selectedSeries := findManga(&database, specifiedSeries)
@@ -33,7 +33,7 @@ func fetchChapter(specifiedSeries string, specifiedChapter string) int {
 	//os.Mkdir("Series/"+selectedSeries.VanityTitle, 0644)
 	//os.Mkdir("Series/"+selectedSeries.VanityTitle+"/Chapters", 0644)
 	if selectedChapter.Saved {
-		return pageCount
+		return
 	}
 	cookie = "announcement_init=true; _fbp=fb.1.1609807369275.633303156; _pin_unauth=dWlkPU5UVTJOamhsTVRVdE5UbGtZeTAwTmpsbExUaGlaalV0T0RjNVpEQTFZek5rTVdOaQ; __gads=ID=63aa8b18be10224e:T=1609807397:S=ALNI_MZtlWpj0hbu9IXuT9Ws1Ndc3GKnjw; __stripe_mid=5d7a5d46-2136-4711-87c2-cfa3a6cd5359c59d43; curtain_seen=true; chapter-series-694-follow-modal=2021-05-01; property-1671-follow-modal=2021-05-01; calendar_filter=manga-books; calendar_view=product-table; chapter-series-724-follow-modal=2021-05-02; chapter-series-540-follow-modal=2021-05-02; _session_id=96a89d1ced081206349d92042ddbe13a; chapter-series-448-follow-modal=2021-06-21; _derived_epik=dj0yJnU9T25meVAzNVpoQy1pSHhMQjZ4TUxFZ28yQ0IxbmF6QW4mbj1DX1dERHBTV2Z1QzVCTjMzYjlXV0pBJm09NyZ0PUFBQUFBR0RXUDRVJnJtPWUmcnQ9QUFBQUFHQkpTa1k; pixlee_analytics_cookie_legacy=%7B%22CURRENT_PIXLEE_USER_ID%22%3A%221208a0fd-733a-91b8-9702-b07329a38f31%22%7D; pixlee_analytics_cookie=%7B%22CURRENT_PIXLEE_USER_ID%22%3A%221208a0fd-733a-91b8-9702-b07329a38f31%22%7D; property-1875-follow-modal=2021-07-03; _gcl_au=1.1.1669550766.1625364968; chapter-series-739-follow-modal=2021-07-04; property-2267-follow-modal=2021-07-05; chapter-series-781-follow-modal=2021-07-05; chapter-series-5-follow-modal=2021-07-06; chapter-series-716-follow-modal=2021-07-08; chapter-series-249-follow-modal=2021-07-08; chapter-series-553-follow-modal=2021-07-08; chapter-series-699-follow-modal=2021-07-08; chapter-series-520-follow-modal=2021-07-09; _gid=GA1.2.1980397515.1626130283; chapter-series-722-follow-modal=2021-07-13; iter_id=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiNWU1NjllNWFmMjMzMmMwMDAxMTE2NDRjIiwidXNlcl9pZCI6IjYwMGRkMjI5Y2FhM2E3MDAwMTQxMDRkZiIsImlhdCI6MTYyNjE0OTg4NH0.kQ6Ar55U_iAgXzHxpjOZa7VCHOSwvevEy6byB4n7gSI; chapter-series-790-follow-modal=2021-07-13; user_visits=1; user_visits_url=https%3A%2F%2Fwww.viz.com%2Fshonenjump%2Fone-piece-chapter-1010%2Fchapter%2F22351%3Faction%3Dread; _gat=1; _gat_UA-136373-5=1; remember_token=fYX9eUg9VxCraf4ux9yFdeh3AdNRmBnJ; _ga_41C9NY052Q=GS1.1.1626194402.187.1.1626194428.0; _ga=GA1.1.1087606157.1609807369"
 
@@ -41,7 +41,6 @@ func fetchChapter(specifiedSeries string, specifiedChapter string) int {
 
 	selectedSeries.Chapters[pos].Saved = true
 	saveToJSON(AllManga{Manga: database}, "manga_full.json")
-	return pageCount
 }
 
 func fetchImages(client *http.Client, selectedSeries *Series, selectedChapter *Chapter, pageCount int) {

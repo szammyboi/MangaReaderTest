@@ -75,16 +75,26 @@ func getChapter(w http.ResponseWriter, r *http.Request) {
 	series := vars["series"]
 	chapter := vars["chapter"]
 
-	chapterSize := fetchChapter(series, chapter)
-	alllinks := ImageLinks{}
-	baseURL := fmt.Sprintf("https://dwmc7ixdnoavh.cloudfront.net/Series/%s/%s/", series, chapter)
-	for i := 0; i <= chapterSize; i++ {
-		alllinks.Links = append(alllinks.Links, fmt.Sprintf(baseURL+"%d.jpg", i))
+	fetchChapter(series, chapter)
+	baseURL := fmt.Sprintf("https://dwmc7ixdnoavh.cloudfront.net/Series/%s/%s/%s", series, chapter, chapter+".json")
+	client := &http.Client{}
+	fmt.Println(baseURL)
+	mangaInfoReq, requestErr := http.NewRequest("GET", baseURL, nil)
+	if requestErr != nil {
+		log.Fatal(requestErr)
 	}
 
-	fmt.Printf("Fetching %s Chapter %s... %s\n", series, chapter, fmt.Sprint(time.Since(start)))
-	w.Header().Set("Content-Type", "application/json")
-	w.Write(toJSON(alllinks))
+	mangaInfoResp, responseErr := client.Do(mangaInfoReq)
+	if responseErr != nil {
+		log.Fatal(responseErr)
+	}
+
+	if mangaInfoResp.StatusCode == http.StatusOK {
+		bodyBytes, _ := ioutil.ReadAll(mangaInfoResp.Body)
+		fmt.Printf("Fetching %s Chapter %s... %s\n", series, chapter, fmt.Sprint(time.Since(start)))
+		w.Header().Set("Content-Type", "application/json")
+		w.Write(bodyBytes)
+	}
 }
 
 func reader(w http.ResponseWriter, r *http.Request) {
