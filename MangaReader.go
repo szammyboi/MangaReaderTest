@@ -29,7 +29,7 @@ func update(w http.ResponseWriter, r *http.Request) {
 	var writeData []byte
 
 	client := &http.Client{}
-	mangaMinReq, requestErr := http.NewRequest("GET", "https://dwmc7ixdnoavh.cloudfront.net/Series/manga_min.json", nil)
+	mangaMinReq, requestErr := http.NewRequest("GET", "https://d2j9ticyfssj97.cloudfront.net/Series/manga_min.json", nil)
 	if requestErr != nil {
 		log.Fatal(requestErr)
 	}
@@ -76,7 +76,7 @@ func getChapter(w http.ResponseWriter, r *http.Request) {
 	chapter := vars["chapter"]
 
 	fetchChapter(series, chapter)
-	baseURL := fmt.Sprintf("https://dwmc7ixdnoavh.cloudfront.net/Series/%s/%s/%s", series, chapter, chapter+".json")
+	baseURL := fmt.Sprintf("https://d2j9ticyfssj97.cloudfront.net/Series/%s/%s/%s", series, chapter, chapter+".json")
 	client := &http.Client{}
 	fmt.Println(baseURL)
 	mangaInfoReq, requestErr := http.NewRequest("GET", baseURL, nil)
