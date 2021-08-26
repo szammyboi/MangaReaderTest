@@ -54,6 +54,7 @@ func update(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Println(time.Since(start))
 
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(writeData)
 }
