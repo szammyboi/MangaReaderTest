@@ -121,7 +121,7 @@ func assets(w http.ResponseWriter, r *http.Request) {
 func main() {
 	updatedToday = false
 	sess, _ = session.NewSession(&aws.Config{
-		Region: aws.String("us-east-2")},
+		Region: aws.String("us-east-1")},
 	)
 
 	// Create S3 service client
