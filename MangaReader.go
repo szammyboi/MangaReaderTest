@@ -66,6 +66,7 @@ func seriesJSON(w http.ResponseWriter, r *http.Request) {
 	database := loadManga("manga_full.json")
 	selectedSeries := findManga(&database, series)
 
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(toJSON(selectedSeries))
 }
@@ -93,6 +94,7 @@ func getChapter(w http.ResponseWriter, r *http.Request) {
 	if mangaInfoResp.StatusCode == http.StatusOK {
 		bodyBytes, _ := ioutil.ReadAll(mangaInfoResp.Body)
 		fmt.Printf("Fetching %s Chapter %s... %s\n", series, chapter, fmt.Sprint(time.Since(start)))
+		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Header().Set("Content-Type", "application/json")
 		w.Write(bodyBytes)
 	}
@@ -115,6 +117,7 @@ func getPage(w http.ResponseWriter, r *http.Request) {
 func assets(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	file := vars["file"]
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	http.ServeFile(w, r, "./frontend/"+file)
 }
 
