@@ -144,7 +144,7 @@ func fetchPage(client *http.Client, linkChan chan imageData, wg *sync.WaitGroup,
 		decodekey, _ := tags.Get(exif.ImageUniqueID)
 		decodestring, _ := decodekey.StringVal()
 		imageURL := fmt.Sprintf("https://d2j9ticyfssj97.cloudfront.net/Series/%s/%s/%s", selectedSeries.VanityTitle, selectedChapter.Chapter, strconv.Itoa(page)+".jpg")
-		(*keyStorage)[page] = ChapterInfoNode{imageURL, decodestring}
+		(*keyStorage)[page] = ChapterInfoNode{URL: imageURL, Key: decodestring}
 
 		upParams := &s3manager.UploadInput{
 			Bucket: &bucket,
