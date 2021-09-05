@@ -208,6 +208,20 @@ func fetchSeriesJSON(series string) *Series {
 	chapterSearch.Wait()
 
 	selectedSeries.Chapters = chapters
+	json := toJSON(selectedSeries)
+	key := "Series/" + selectedSeries.VanityTitle + "/series.json"
+	test2 := bytes.NewReader(json)
+	upParams := &s3manager.UploadInput{
+		Bucket: &bucket,
+		Key:    &key,
+		Body:   test2,
+	}
+
+	result, uploaderr := uploader.Upload(upParams)
+	if uploaderr != nil {
+		log.Fatal(uploaderr)
+	}
+	fmt.Println(result)
 	return selectedSeries
 }
 
