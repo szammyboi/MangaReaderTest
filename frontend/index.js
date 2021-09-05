@@ -56,7 +56,6 @@ async function loadChapter() {
     currentPages = []
     console.log("loading...")
     chapterTitle = currentChapterName.toString().replace(".", '-')
-    series = 'one-piece'
             axios
                 .get('https://d2j9ticyfssj97.cloudfront.net/Series/' + series + '/' + chapterTitle + '/' + chapterTitle + '.json')
                 .then(keyresponse => {
