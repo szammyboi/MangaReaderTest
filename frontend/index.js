@@ -56,25 +56,22 @@ async function loadChapter() {
     currentPages = []
     console.log("loading...")
     chapterTitle = currentChapterName.toString().replace(".", '-')
-    axios
-        .get('https://mangatesting.herokuapp.com/getChapter/' + series + '/' + chapterTitle)
-        .then(response => {
-            pageLinks = response.data.links;
-
+    series = 'one-piece'
             axios
-                .get('https://dwmc7ixdnoavh.cloudfront.net/Series/' + series + '/' + chapterTitle + '/' + chapterTitle + '.json')
+                .get('https://cf-simple-s3-origin-mangacdn-797668304144.s3.amazonaws.com/Series/' + series + '/' + chapterTitle + '/' + chapterTitle + '.json')
                 .then(keyresponse => {
-                    keys = keyresponse.data.keys
-                    for (i = 0; i < pageLinks.length; i++) {
+                    console.log(keyresponse)
+                    info = keyresponse.data.info
+                    for (i = 0; i < info.length; i++) {
                         currentPages.push({
                             id: i,
-                            url: pageLinks[i],
-                            key: keys[i]
+                            url: info[i].url,
+                            key: info[i].key
                         })
 
                         var img = $('<img />', {
                             id: i,
-                            src: pageLinks[i],
+                            src: info[i].url,
                         });
                         $("#imgcontainer").append(img)
 
@@ -93,7 +90,6 @@ async function loadChapter() {
                         sideLoadChapter(currentChapterIndex - 1);
                     }
                 })
-        })
 }
 
 
