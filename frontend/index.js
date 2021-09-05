@@ -58,7 +58,7 @@ async function loadChapter() {
     chapterTitle = currentChapterName.toString().replace(".", '-')
     series = 'one-piece'
             axios
-                .get('https://cf-simple-s3-origin-mangacdn-797668304144.s3.amazonaws.com/Series/' + series + '/' + chapterTitle + '/' + chapterTitle + '.json')
+                .get('https://d2j9ticyfssj97.cloudfront.net/Series/' + series + '/' + chapterTitle + '/' + chapterTitle + '.json')
                 .then(keyresponse => {
                     console.log(keyresponse)
                     info = keyresponse.data.info
