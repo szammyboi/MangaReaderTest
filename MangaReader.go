@@ -44,7 +44,7 @@ func update(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// fix timing here bruv
-	if !updatedToday && time.Now().Hour() >= 12 {
+	if !updatedToday || updatedToday {
 		fmt.Println("Updated DB")
 		writeData = updateDatabase(writeData)
 		updatedToday = true
@@ -63,8 +63,7 @@ func seriesJSON(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	series := vars["series"]
 
-	database := loadMangaFromAWS("Series/mangafull.json")
-	selectedSeries := findManga(&database, series)
+	selectedSeries := fetchSeriesJSON(series)
 
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")

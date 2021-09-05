@@ -26,7 +26,6 @@ package main
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
 	"log"
 	"strings"
@@ -110,32 +109,38 @@ func returnSeriesData() []Series {
 
 func updateDatabase(rawJSON []byte) []byte {
 	freshScan := returnSeriesData()
-	var dbManga AllManga
-	json.Unmarshal(rawJSON, &dbManga)
-	database := dbManga.Manga
+	//database := loadMangaFromAWS("Series/mangamin.json")
 
 	// vanity titles then call update chapter on that
 	// or implement latest chapter attr here probalbyl the most effi
-	updateQueue := make([]Series, 0)
-	for _, manga := range freshScan {
-		for _, savedManga := range database {
-			if manga.VanityTitle == savedManga.VanityTitle {
-				if manga.LatestChapter != savedManga.LatestChapter {
-					updateQueue = append(updateQueue, manga)
+	/*
+		var found bool
+		updateQueue := make([]Series, 0)
+		for _, manga := range freshScan {
+			found = false
+			for _, savedManga := range database {
+				if manga.VanityTitle == savedManga.VanityTitle {
+					if manga.LatestChapter != savedManga.LatestChapter {
+						updateQueue = append(updateQueue, manga)
+					}
+					if len(savedManga.Chapters) == 0 {
+						updateQueue = append(updateQueue, manga)
+					}
+					found = true
+					break
 				}
-				break
+			}
+			if !found {
+				updateQueue = append(updateQueue, manga)
 			}
 		}
-		// new series
-	}
+	*/
 
 	allManga := AllManga{
 		Manga: freshScan,
 	}
 
-	if len(updateQueue) > 0 {
-		updateChapters(updateQueue)
-	}
+	//updateChapters(updateQueue)
 
 	json := toJSON(allManga)
 	key := "Series/mangamin.json"
@@ -156,6 +161,70 @@ func updateDatabase(rawJSON []byte) []byte {
 	//saveToJSON(allManga, "manga_min.json")
 }
 
+func fetchSeriesJSON(series string) *Series {
+	min := loadMangaFromAWS("Series/mangamin.json")
+	selectedSeries := findManga(&min, series)
+
+	chapters := make([]Chapter, 0)
+	foundChapters := make([]string, 0)
+
+	chapterSearch := colly.NewCollector(
+		colly.Async(false),
+	)
+
+	chapterSearch.OnHTML("[data-target-url]", func(e *colly.HTMLElement) {
+		target := e.Attr("data-target-url")
+		target = target[strings.Index(target, "/"):]
+		target = strings.ReplaceAll(target, "');", "")
+
+		values := strings.Split(target, "/")
+
+		chapter := values[2]
+		chapter = chapter[strings.Index(chapter, "chapter-")+len("chapter-"):]
+		//chapter = strings.ReplaceAll(chapter, "-", ".")
+
+		for _, foundChapter := range foundChapters {
+			if foundChapter == chapter {
+				return
+			}
+		}
+
+		values[4] = strings.ReplaceAll(values[4], "?action=read", "")
+		mangaID := values[4]
+
+		newChapter := Chapter{
+			Chapter:  chapter,
+			MangaID:  mangaID,
+			DataURL:  "https://www.viz.com" + target,
+			ImageURL: "https://www.viz.com/manga/get_manga_url?device_id=3&manga_id=" + mangaID + "&page=",
+			Saved:    false,
+		}
+
+		chapters = append(chapters, newChapter)
+		foundChapters = append(foundChapters, chapter)
+	})
+
+	chapterSearch.Visit("https://viz.com/shonenjump/chapters/" + series)
+	chapterSearch.Wait()
+
+	selectedSeries.Chapters = chapters
+	json := toJSON(selectedSeries)
+	key := "Series/" + selectedSeries.VanityTitle + "/series.json"
+	test2 := bytes.NewReader(json)
+	upParams := &s3manager.UploadInput{
+		Bucket: &bucket,
+		Key:    &key,
+		Body:   test2,
+	}
+
+	result, uploaderr := uploader.Upload(upParams)
+	if uploaderr != nil {
+		log.Fatal(uploaderr)
+	}
+	fmt.Println(result)
+	return selectedSeries
+}
+
 func updateChapters(updateQueue []Series) {
 	var dbChapters = loadMangaFromAWS("Series/mangafull.json")
 	var wg sync.WaitGroup
@@ -171,11 +240,13 @@ func updateChapters(updateQueue []Series) {
 		}
 		if !found {
 			wg.Add(1)
+			fmt.Println("New Series:", newSeries.VanityTitle)
 			dbChapters = append(dbChapters, newSeries)
 			go updateSeries(len(dbChapters)-1, newSeries.VanityTitle, &dbChapters, &wg)
 		}
 	}
 	wg.Wait()
+	saveToJSON(AllManga{Manga: dbChapters}, "testingtesting.json")
 	json := toJSON(AllManga{Manga: dbChapters})
 	key := "Series/mangafull.json"
 	test2 := bytes.NewReader(json)
@@ -195,7 +266,7 @@ func updateChapters(updateQueue []Series) {
 }
 
 func updateSeries(selectedSeries int, vanityTitle string, db *[]Series, wg *sync.WaitGroup) {
-
+	fmt.Println("Updating ", vanityTitle, "...")
 	chapters := make([]Chapter, 0)
 	foundChapters := make([]string, 0)
 
@@ -238,6 +309,13 @@ func updateSeries(selectedSeries int, vanityTitle string, db *[]Series, wg *sync
 	chapterSearch.Visit("https://viz.com/shonenjump/chapters/" + vanityTitle)
 	chapterSearch.Wait()
 
+	if len(chapters) > 0 {
+		if chapters[0].Chapter == "1" {
+			(*db)[selectedSeries].LatestChapter = chapters[len(chapters)-1].Chapter
+		} else {
+			(*db)[selectedSeries].LatestChapter = chapters[0].Chapter
+		}
+	}
 	(*db)[selectedSeries].Chapters = chapters
 	wg.Done()
 }
