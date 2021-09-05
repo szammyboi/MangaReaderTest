@@ -24,7 +24,7 @@ type imageData struct {
 
 func fetchChapter(specifiedSeries string, specifiedChapter string) {
 	exif.RegisterParsers(mknote.All...)
-	database := loadManga("manga_full.json")
+	database := loadMangaFromAWS("Series/mangafull.json")
 	selectedSeries := findManga(&database, specifiedSeries)
 	selectedChapter, pos := findChapterAndPosition(&selectedSeries.Chapters, specifiedChapter)
 	client := &http.Client{}
@@ -40,7 +40,20 @@ func fetchChapter(specifiedSeries string, specifiedChapter string) {
 	fetchImages(client, selectedSeries, selectedChapter, pageCount)
 
 	selectedSeries.Chapters[pos].Saved = true
-	saveToJSON(AllManga{Manga: database}, "manga_full.json")
+	json := toJSON(AllManga{Manga: database})
+	key := "Series/mangafull.json"
+	test2 := bytes.NewReader(json)
+	upParams := &s3manager.UploadInput{
+		Bucket: &bucket,
+		Key:    &key,
+		Body:   test2,
+	}
+
+	result, uploaderr := uploader.Upload(upParams)
+	if uploaderr != nil {
+		log.Fatal(uploaderr)
+	}
+	fmt.Println(result)
 }
 
 func fetchImages(client *http.Client, selectedSeries *Series, selectedChapter *Chapter, pageCount int) {

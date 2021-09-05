@@ -5,6 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"log"
+	"net/http"
 	"os"
 )
 
@@ -50,6 +52,31 @@ func loadManga(file string) []Series {
 	json.Unmarshal(byteValue, &p)
 
 	return p.Manga
+}
+
+func loadMangaFromAWS(filename string) []Series {
+	var mangadata []byte
+
+	client := &http.Client{}
+	mangareq, requestErr := http.NewRequest("GET", "https://d2j9ticyfssj97.cloudfront.net/"+filename, nil)
+	if requestErr != nil {
+		log.Fatal(requestErr)
+	}
+
+	manga, responseErr := client.Do(mangareq)
+	if responseErr != nil {
+		log.Fatal(responseErr)
+	}
+
+	if manga.StatusCode == http.StatusOK {
+		mangadata, _ = ioutil.ReadAll(manga.Body)
+
+		var p AllManga
+		json.Unmarshal(mangadata, &p)
+
+		return p.Manga
+	}
+	return make([]Series, 0)
 }
 
 func findManga(database *[]Series, tag string) *Series {

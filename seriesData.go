@@ -11,13 +11,13 @@ __/\\\\\\\\\\\\\\\_______/\\\\\_______/\\\\\\\\\\\\__________/\\\\\______
         _______\///_____________\/////_______\////////////__________\/////_______
 
 
-		* POSSIBLY REVERT TO THE OLD WAY FOR INCREASED SPEED OR FIND A WAY TO VALIDATE IF THEY NEED TO BE UPDATED *
-		* IMPLEMENT A TRUE UPDATING SYSTEM THAT DELETES THE DETAIL FILES FOR MANGAS THAT WERE PREVIOUSLY UPDATED AND THEN CALL FETCHCHAPTERS ON THEM *
-		* MAYBE MAKE IT SO THAT ALL THE CHAPTERS FROM THE FULL FILE ARE PUT INTO THE SAME ORDER AS THE MIN FILE SO THAT THEY ARE IN LATEST RELEASE ORDER *
-		* PASS THE FILE AS A POINTER TO THE UPDATE CHAPTER FUNCTION FOR EFFICIENCY *
-		* IMPLEMENT NEW SERIES ADDITION ALGORITHM *
-		* ADD A CHAPTER PAGE LENGTH SECTION TO THE SERVER QUERY TO ELIMINATE THE RISKY METHOD OF FETCHING PAGES *
-		* REWRITE READER COMPLETELY *
+        * POSSIBLY REVERT TO THE OLD WAY FOR INCREASED SPEED OR FIND A WAY TO VALIDATE IF THEY NEED TO BE UPDATED *
+        * IMPLEMENT A TRUE UPDATING SYSTEM THAT DELETES THE DETAIL FILES FOR MANGAS THAT WERE PREVIOUSLY UPDATED AND THEN CALL FETCHCHAPTERS ON THEM *
+        * MAYBE MAKE IT SO THAT ALL THE CHAPTERS FROM THE FULL FILE ARE PUT INTO THE SAME ORDER AS THE MIN FILE SO THAT THEY ARE IN LATEST RELEASE ORDER *
+        * PASS THE FILE AS A POINTER TO THE UPDATE CHAPTER FUNCTION FOR EFFICIENCY *
+        * IMPLEMENT NEW SERIES ADDITION ALGORITHM *
+        * ADD A CHAPTER PAGE LENGTH SECTION TO THE SERVER QUERY TO ELIMINATE THE RISKY METHOD OF FETCHING PAGES *
+        * REWRITE READER COMPLETELY *
 
 
 */
@@ -28,10 +28,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
-	"os"
 	"strings"
+	"sync"
 
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
 	"github.com/gocolly/colly"
@@ -116,12 +115,13 @@ func updateDatabase(rawJSON []byte) []byte {
 	database := dbManga.Manga
 
 	// vanity titles then call update chapter on that
-	updateQueue := make([]string, 0)
+	// or implement latest chapter attr here probalbyl the most effi
+	updateQueue := make([]Series, 0)
 	for _, manga := range freshScan {
 		for _, savedManga := range database {
 			if manga.VanityTitle == savedManga.VanityTitle {
 				if manga.LatestChapter != savedManga.LatestChapter {
-					updateQueue = append(updateQueue, manga.VanityTitle)
+					updateQueue = append(updateQueue, manga)
 				}
 				break
 			}
@@ -129,18 +129,16 @@ func updateDatabase(rawJSON []byte) []byte {
 		// new series
 	}
 
-	if len(updateQueue) > 0 {
-		for _, s := range updateQueue {
-			updateChapter(s)
-		}
-	}
-
 	allManga := AllManga{
 		Manga: freshScan,
 	}
 
+	if len(updateQueue) > 0 {
+		updateChapters(updateQueue)
+	}
+
 	json := toJSON(allManga)
-	key := "Series/manga_min.json"
+	key := "Series/mangamin.json"
 	test2 := bytes.NewReader(json)
 	upParams := &s3manager.UploadInput{
 		Bucket: &bucket,
@@ -158,27 +156,45 @@ func updateDatabase(rawJSON []byte) []byte {
 	//saveToJSON(allManga, "manga_min.json")
 }
 
-func updateChapter(vanityTitle string) {
-
-	jsonFile, err := os.Open("manga_full.json")
-
-	if err != nil {
-		log.Println(err)
-	}
-
-	byteValue, _ := ioutil.ReadAll(jsonFile)
-
-	var savedManga AllManga
-	var selectedSeries int
-	json.Unmarshal(byteValue, &savedManga)
-	database := savedManga.Manga
-
-	for seriesIndex, currentSeries := range database {
-		if currentSeries.VanityTitle == vanityTitle {
-			selectedSeries = seriesIndex
-			break
+func updateChapters(updateQueue []Series) {
+	var dbChapters = loadMangaFromAWS("Series/mangafull.json")
+	var wg sync.WaitGroup
+	var found bool
+	for _, newSeries := range updateQueue {
+		found = false
+		for index, oldSeries := range dbChapters {
+			if newSeries.VanityTitle == oldSeries.VanityTitle {
+				wg.Add(1)
+				dbChapters[index].LatestChapter = newSeries.LatestChapter
+				go updateSeries(index, newSeries.VanityTitle, &dbChapters, &wg)
+			}
+		}
+		if !found {
+			wg.Add(1)
+			dbChapters = append(dbChapters, newSeries)
+			go updateSeries(len(dbChapters)-1, newSeries.VanityTitle, &dbChapters, &wg)
 		}
 	}
+	wg.Wait()
+	json := toJSON(AllManga{Manga: dbChapters})
+	key := "Series/mangafull.json"
+	test2 := bytes.NewReader(json)
+	upParams := &s3manager.UploadInput{
+		Bucket: &bucket,
+		Key:    &key,
+		Body:   test2,
+	}
+
+	result, uploaderr := uploader.Upload(upParams)
+	if uploaderr != nil {
+		log.Fatal(uploaderr)
+	}
+	fmt.Println("ALL UPDATED")
+	fmt.Println(result)
+
+}
+
+func updateSeries(selectedSeries int, vanityTitle string, db *[]Series, wg *sync.WaitGroup) {
 
 	chapters := make([]Chapter, 0)
 	foundChapters := make([]string, 0)
@@ -222,22 +238,6 @@ func updateChapter(vanityTitle string) {
 	chapterSearch.Visit("https://viz.com/shonenjump/chapters/" + vanityTitle)
 	chapterSearch.Wait()
 
-	database[selectedSeries].Chapters = chapters
-
-	if len(chapters) > 0 {
-		if chapters[0].Chapter == "1" {
-			database[selectedSeries].LatestChapter = chapters[len(chapters)-1].Chapter
-		} else {
-			database[selectedSeries].LatestChapter = chapters[0].Chapter
-		}
-	}
-
-	updatedManga := AllManga{
-		Manga: database,
-	}
-
-	os.Mkdir("Series/"+vanityTitle, 0644)
-	os.Mkdir("Series/"+vanityTitle+"/Chapters", 0644)
-	saveToJSON(updatedManga, "manga_full.json")
-
+	(*db)[selectedSeries].Chapters = chapters
+	wg.Done()
 }

@@ -29,7 +29,7 @@ func update(w http.ResponseWriter, r *http.Request) {
 	var writeData []byte
 
 	client := &http.Client{}
-	mangaMinReq, requestErr := http.NewRequest("GET", "https://d2j9ticyfssj97.cloudfront.net/Series/manga_min.json", nil)
+	mangaMinReq, requestErr := http.NewRequest("GET", "https://d2j9ticyfssj97.cloudfront.net/Series/mangamin.json", nil)
 	if requestErr != nil {
 		log.Fatal(requestErr)
 	}
@@ -63,7 +63,7 @@ func seriesJSON(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	series := vars["series"]
 
-	database := loadManga("manga_full.json")
+	database := loadMangaFromAWS("Series/mangafull.json")
 	selectedSeries := findManga(&database, series)
 
 	w.Header().Set("Access-Control-Allow-Origin", "*")
