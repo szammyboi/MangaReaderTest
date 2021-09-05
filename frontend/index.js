@@ -53,6 +53,7 @@ async function loadChapterOptions() {
 }
 
 async function loadChapter() {
+    sideLoadChapter(currentChapterIndex);
     currentPages = []
     console.log("loading...")
     chapterTitle = currentChapterName.toString().replace(".", '-')
