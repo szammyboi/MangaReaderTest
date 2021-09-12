@@ -24,7 +24,7 @@ type imageData struct {
 
 func fetchChapter(specifiedSeries string, specifiedChapter string) {
 	exif.RegisterParsers(mknote.All...)
-	database := loadMangaFromAWS("Series/mangafull.json")
+	database := loadMangaFromAWS("Series/" + specifiedSeries + ".json")
 	selectedSeries := findManga(&database, specifiedSeries)
 	selectedChapter, pos := findChapterAndPosition(&selectedSeries.Chapters, specifiedChapter)
 	client := &http.Client{}
