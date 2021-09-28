@@ -44,7 +44,7 @@ func update(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// fix timing here bruv
-	if !updatedToday || updatedToday {
+	if !updatedToday {
 		fmt.Println("Updated DB")
 		writeData = updateDatabase(writeData)
 		updatedToday = true
@@ -63,7 +63,7 @@ func seriesJSON(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	series := vars["series"]
 
-	selectedSeries := fetchSeriesJSON(series)
+	selectedSeries := fetchSeriesJSON(series, false)
 
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
@@ -126,8 +126,6 @@ func main() {
 		Region: aws.String("us-east-1")},
 	)
 
-	// Create S3 service client
-	//svc := s3.New(sess)
 	uploader = s3manager.NewUploader(sess)
 
 	bucket = os.Getenv("S3_BUCKET")

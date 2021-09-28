@@ -55,7 +55,6 @@ func loadManga(file string) []Series {
 }
 
 func loadMangaFromAWS(filename string) []Series {
-	var mangadata []byte
 
 	client := &http.Client{}
 	mangareq, requestErr := http.NewRequest("GET", "https://d2j9ticyfssj97.cloudfront.net/"+filename, nil)
@@ -69,14 +68,49 @@ func loadMangaFromAWS(filename string) []Series {
 	}
 
 	if manga.StatusCode == http.StatusOK {
-		mangadata, _ = ioutil.ReadAll(manga.Body)
+		mangadata, readerr := ioutil.ReadAll(manga.Body)
+		if readerr != nil {
+			log.Fatal(readerr)
+		}
 
 		var p AllManga
 		json.Unmarshal(mangadata, &p)
-
 		return p.Manga
+	} else {
+		log.Fatal("ERROR!")
+		log.Fatal("STATUS CODE:", manga.StatusCode)
 	}
+	log.Fatal("Something went wrong")
 	return make([]Series, 0)
+}
+
+func loadSeriesFromAWS(filename string) Series {
+
+	client := &http.Client{}
+	mangareq, requestErr := http.NewRequest("GET", "https://d2j9ticyfssj97.cloudfront.net/"+filename, nil)
+	if requestErr != nil {
+		log.Fatal(requestErr)
+	}
+
+	manga, responseErr := client.Do(mangareq)
+	if responseErr != nil {
+		log.Fatal(responseErr)
+	}
+
+	if manga.StatusCode == http.StatusOK {
+		mangadata, readerr := ioutil.ReadAll(manga.Body)
+		if readerr != nil {
+			log.Fatal(readerr)
+		}
+		var p Series
+		json.Unmarshal(mangadata, &p)
+
+		return p
+	} else {
+		log.Fatal("ERROR!")
+		log.Fatal("STATUS CODE:", manga.StatusCode)
+	}
+	return Series{}
 }
 
 func findManga(database *[]Series, tag string) *Series {

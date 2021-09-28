@@ -9,6 +9,7 @@ type Series struct {
 	VanityTitle   string    `json:"vanityTitle"`
 	LatestChapter string    `json:"latestChapter"`
 	Thumbnail     string    `json:"thumbnail"`
+	Saved         bool      `json:"saved"`
 	Chapters      []Chapter `json:"chapters"`
 }
 
